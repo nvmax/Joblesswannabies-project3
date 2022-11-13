@@ -1,0 +1,95 @@
+/* Nav Grids  */
+
+.nav-grid {
+   display: grid;
+}
+
+.nav-list-grid {
+   display: grid;
+   gap: .75rem;
+}
+
+.grid-col-span-2 {
+   grid-column: span 2;
+}
+
+/* Nav Grid Media queries */
+
+@media (min-width: 50em) {
+   .nav-grid {
+      grid-template-columns: repeat(3, 1fr);
+   }
+
+   .nav-list-grid {
+      grid-template-columns: repeat(4, 1fr);
+      grid-column-start: 3;
+   }
+}
+
+@media (max-width: 50em) {
+   .nav-grid {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+   }
+
+   .nav-list-grid {
+      grid-template-columns: repeat(4, 1fr);
+      grid-row-start: 2;
+      gap: 0;
+   }
+}
+
+/* Nav Styling */
+
+.nav-style {
+   background-color: #66717E;
+   color: #EFE7DA;
+   padding: 8px;
+}
+
+.nav-list-style {
+   list-style: none;
+   font-size: 15px;
+}
+
+.nav-title {
+   font-size: 50px;
+}
+
+/* Nav Styling Media queries */
+@media (max-width: 50em) {
+   .nav-list-style {
+      justify-items: center;
+      padding: 0%;
+   }
+
+   .nav-title {
+      align-self: center;
+      justify-self: center;
+   }
+}
+
+/* Global Styling */
+
+body {
+   margin: 0%;
+}
+
+/* Fonts */
+@font-face {
+   font-family: 'Coolvetica';
+   src: url('./fonts/coolvetica.rg-regular.otf') format('truetype');
+}
+
+@font-face {
+   font-family: 'Poppins';
+   src: url('./fonts/poppins.regular.ttf') format('truetype');
+}
+
+.font-Coolvetica {
+   font-family: 'Coolvetica';
+}
+
+.font-Poppins {
+   font-family: 'Poppins';
+}
