@@ -10,7 +10,7 @@ const app = express();
 const server = new ApolloServer({
     typeDefs,
     resolvers,
-    context: authMiddleware
+    context: authMiddleware,
 });
 
 app.use(express.urlencoded({ extended: false }));
@@ -37,3 +37,4 @@ app.get('/', (req, res) => {
     };
     
     startApolloServer(typeDefs, resolvers);
+    

@@ -80,3 +80,7 @@ const productSchema = new Schema({
         ref: 'Category',
     },
 });
+
+const Product = mongoose.model('Product', productSchema);
+
+module.exports = Product; 
