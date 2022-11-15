@@ -56,6 +56,10 @@ body {
    font-size: 50px;
 }
 
+.nav-icon-style {
+   font-size: 20px;
+}
+
 /* Nav Styling Media queries */
 @media (max-width: 50em) {
    .nav-list-style {
