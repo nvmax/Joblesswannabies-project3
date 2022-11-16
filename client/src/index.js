@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import './style.css'
 import './fonts/coolvetica.rg-regular.otf'
 import './fonts/poppins.regular.ttf'
+import './style.css'
 
 // import reportWebVitals from './reportWebVitals';
 

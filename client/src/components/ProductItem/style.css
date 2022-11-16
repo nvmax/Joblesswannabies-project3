@@ -1,0 +1,13 @@
+/* Product Item Styling */
+
+.product-item-card-styling {
+    width: 85%;
+    align-self: center;
+    justify-self: center;
+    justify-items: center;
+ }
+ 
+ .product-item-title-styling {
+    margin-top: 1px;
+    font-size: 14px;
+ }
