@@ -23,6 +23,14 @@ function App() {
               path="/"
               element={<Home />}
             />
+            <Route 
+              path="/login" 
+              element={<Login />} 
+            />
+            <Route 
+              path="/signup" 
+              element={<Signup />} 
+            />
           </Routes>
         </StoreProvider>
       </Router>
