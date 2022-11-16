@@ -8,19 +8,23 @@ const resolvers = {
     categories: async () => {
       return await Category.find();
     },
-    category: async (parent, { category, name }) => {
-      const params = category ? { category } : { name };
-      console.log(params);
-      return await Category.findOne(params);
-    },
     products: async (parent, { category, name }) => {
-      const params = category ? { category } : { name };
-      const catId = (await Category.findOne(params))._id;
+      const params = {};
 
-      return await Product.find({ category: catId }).populate("category");
+      if (category) {
+        params.category = category;
+      }
+
+      if (name) {
+        params.name = {
+          $regex: name,
+        };
+      }
+
+      return await Product.find(params).populate("category");
     },
     product: async (parent, { _id }) => {
-      return await Product.findById;
+      return await Product.findById(_id).populate("category");
     },
     user: async (parent, args, context) => {
       if (context.user) {
