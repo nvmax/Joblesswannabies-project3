@@ -1,5 +1,5 @@
-import { useQuery } from '@apollo/client';
 import ProductList from '../components/ProductList';
+
 
 const Home = () => {
 
