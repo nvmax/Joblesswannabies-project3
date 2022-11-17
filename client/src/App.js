@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { StoreProvider } from './utils/GlobalState';
 import Home from './pages/Home';
 import Nav from './components/Nav/index';
-import Login from ''
-import Signup from ''
+import Login from './pages/Login'
+import Signup from './pages/Signup'
 
 const client = new ApolloClient({
   uri: '/graphql',

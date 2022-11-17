@@ -1,0 +1,16 @@
+.product-category-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(8, 1fr);
+ }
+
+ .product-category-title-styling {
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+ }
+
+ .product-category-styling {
+    font-size: 22px;
+ }
+
