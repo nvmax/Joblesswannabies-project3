@@ -35,29 +35,28 @@ function Categories() {
         }
     }, [categoryData, loading, dispatch]);
 
-    const handleClick = (id) => {
+    const handleChange = (value) => {
+        console.log(value.target.value)
         dispatch({
             type: UPDATE_CURRENT_CATEGORY,
-            currentCategory: id,
+            currentCategory: value.target.value,
         });
     };
+
+    
 
     return (
         <div >
             <div className='product-category-title-styling font-Poppins'>Categories</div>
-            <select>
+            <select  onChange = {handleChange} >
                 {categories.map((category) => (
                     <option
-                        key={category._id}
-                        onClick={() => {
-                            handleClick(category._id);
-                        }}
+                        value={category._id}
                         className='product-category-styling font-Poppins'>{category.name}
                     </option>
                 ))}
             </select>
         </div>
-
     );
 }
 
