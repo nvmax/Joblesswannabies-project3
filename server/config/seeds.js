@@ -7,13 +7,11 @@ db.once("open", async () => {
   const categories = await Category.insertMany([
     { name: "Running" },
     { name: "Multi-Sport" },
-    { name: "Health, Fitness" },
     { name: "Health" },
     { name: "Special Edition" },
     { name: "Smart Watch" },
     { name: "Fitness" },
-    { name: "Kids, Fitness" },
-    { name: "Fitness, Health" },
+    { name: "Kids" },
     { name: "Swimming" },
     { name: "Tactical" },
     { name: "Outdoors" },
@@ -47,6 +45,7 @@ db.once("open", async () => {
       waterrating: "5 ATM",
       colordisplay: "Yes",
       category: categories[0]._id,
+      qty: 88,
     },
     {
       name: "Forerunner® 945",
@@ -64,6 +63,7 @@ db.once("open", async () => {
       waterrating: "5 ATM",
       colordisplay: "Yes",
       category: categories[0]._id,
+      qty: 14,
     },
     {
       name: "Forerunner® 935",
@@ -81,6 +81,7 @@ db.once("open", async () => {
       waterrating: "5 ATM",
       colordisplay: "Yes",
       category: categories[0]._id,
+      qty: 154,
     },
     {
       name: "Forerunner® 745",
@@ -98,6 +99,7 @@ db.once("open", async () => {
       waterrating: "5 ATM",
       colordisplay: "Yes",
       category: categories[0]._id,
+      qty: 80,
     },
     {
       name: "Forerunner® 735XT",
@@ -116,6 +118,7 @@ db.once("open", async () => {
       waterrating: "5 ATM",
       colordisplay: "Yes",
       category: categories[0]._id,
+      qty: 37,
     },
     {
       name: "Forerunner® 645 Music",
@@ -134,6 +137,7 @@ db.once("open", async () => {
       waterrating: "5 ATM",
       colordisplay: "Yes",
       category: categories[0]._id,
+      qty: 42,
     },
     {
       name: "Forerunner® 645",
@@ -152,6 +156,7 @@ db.once("open", async () => {
       waterrating: "5 ATM",
       colordisplay: "Yes",
       category: categories[0]._id,
+      qty: 38,
     },
     {
       name: "Forerunner® 245 Music",
@@ -169,6 +174,7 @@ db.once("open", async () => {
       waterrating: "Swim, 5 ATM",
       colordisplay: "Yes",
       category: categories[0]._id,
+      qty: 121,
     },
     {
       name: "Forerunner® 245",
@@ -186,6 +192,7 @@ db.once("open", async () => {
       waterrating: "Swim, 5 ATM",
       colordisplay: "Yes",
       category: categories[0]._id,
+      qty: 52,
     },
     {
       name: "Forerunner® 235",
@@ -203,6 +210,7 @@ db.once("open", async () => {
       waterrating: "5 ATM",
       colordisplay: "Yes",
       category: categories[0]._id,
+      qty: 87,
     },
     {
       name: "Forerunner® 55",
@@ -221,6 +229,7 @@ db.once("open", async () => {
       waterrating: "5 ATM",
       colordisplay: "Yes",
       category: categories[0]._id,
+      qty: 39,
     },
     {
       name: "Forerunner® 45",
@@ -238,6 +247,7 @@ db.once("open", async () => {
       waterrating: "5 ATM",
       colordisplay: "Yes",
       category: categories[0]._id,
+      qty: 45,
     },
     {
       name: "Forerunner® 45S",
@@ -256,6 +266,7 @@ db.once("open", async () => {
       waterrating: "5 ATM",
       colordisplay: "Yes",
       category: categories[0]._id,
+      qty: 134,
     },
     {
       name: "Forerunner® 35",
@@ -273,6 +284,7 @@ db.once("open", async () => {
       waterrating: "5 ATM",
       colordisplay: "",
       category: categories[0]._id,
+      qty: 23,
     },
     {
       name: "Enduro™",
@@ -291,6 +303,7 @@ db.once("open", async () => {
       waterrating: "10 ATM",
       colordisplay: "Yes",
       category: categories[1]._id,
+      qty: 64,
     },
     {
       name: "fēnix® 6X – Pro Solar",
@@ -309,6 +322,7 @@ db.once("open", async () => {
       waterrating: "10 ATM",
       colordisplay: "Yes",
       category: categories[1]._id,
+      qty: 45,
     },
     {
       name: "fēnix® 6X - Pro/Sapphire",
@@ -327,6 +341,7 @@ db.once("open", async () => {
       waterrating: "10 ATM",
       colordisplay: "Yes",
       category: categories[1]._id,
+      qty: 63,
     },
     {
       name: "fēnix® 6 - Pro/Sapphire",
@@ -345,6 +360,7 @@ db.once("open", async () => {
       waterrating: "10 ATM",
       colordisplay: "Yes",
       category: categories[1]._id,
+      qty: 85,
     },
     {
       name: "fēnix® 6S - Pro/Sapphire",
@@ -363,6 +379,7 @@ db.once("open", async () => {
       waterrating: "10 ATM",
       colordisplay: "Yes",
       category: categories[1]._id,
+      qty: 85,
     },
     {
       name: "fēnix® 6",
@@ -381,6 +398,7 @@ db.once("open", async () => {
       waterrating: "10 ATM",
       colordisplay: "Yes",
       category: categories[1]._id,
+      qty: 34,
     },
     {
       name: "fēnix® 6S",
@@ -399,6 +417,7 @@ db.once("open", async () => {
       waterrating: "10 ATM",
       colordisplay: "Yes",
       category: categories[1]._id,
+      qty: 58,
     },
     {
       name: "fēnix® 5X Plus",
@@ -417,6 +436,7 @@ db.once("open", async () => {
       waterrating: "10 ATM",
       colordisplay: "Yes",
       category: categories[1]._id,
+      qty: 63,
     },
     {
       name: "fēnix® 5 Plus",
@@ -435,6 +455,7 @@ db.once("open", async () => {
       waterrating: "10 ATM",
       colordisplay: "Yes",
       category: categories[1]._id,
+      qty: 94,
     },
     {
       name: "fēnix® 5S Plus",
@@ -453,6 +474,7 @@ db.once("open", async () => {
       waterrating: "10 ATM",
       colordisplay: "Yes",
       category: categories[1]._id,
+      qty: 53,
     },
     {
       name: "fēnix® 5X",
@@ -471,6 +493,7 @@ db.once("open", async () => {
       waterrating: "10 ATM",
       colordisplay: "Yes",
       category: categories[1]._id,
+      qty: 57,
     },
     {
       name: "fēnix® 5",
@@ -488,6 +511,7 @@ db.once("open", async () => {
       waterrating: "10 ATM",
       colordisplay: "Yes",
       category: categories[1]._id,
+      qty: 52,
     },
     {
       name: "fēnix® 5S",
@@ -506,6 +530,7 @@ db.once("open", async () => {
       waterrating: "10 ATM",
       colordisplay: "Yes",
       category: categories[1]._id,
+      qty: 55,
     },
     {
       name: "Venu® 2",
@@ -524,6 +549,7 @@ db.once("open", async () => {
       waterrating: "Swim, 5 ATM",
       colordisplay: "Yes",
       category: categories[2]._id,
+      qty: 51,
     },
     {
       name: "Venu® 2S",
@@ -542,6 +568,7 @@ db.once("open", async () => {
       waterrating: "Swim, 5 ATM",
       colordisplay: "Yes",
       category: categories[2]._id,
+      qty: 59,
     },
     {
       name: "Venu® Sq",
@@ -558,7 +585,8 @@ db.once("open", async () => {
       weight: "37.6 g",
       waterrating: "Swim, 5 ATM",
       colordisplay: "Yes",
-      category: categories[3]._id,
+      category: categories[2]._id,
+      qty: 53,
     },
     {
       name: "Venu® Sq – Music Edition",
@@ -575,7 +603,8 @@ db.once("open", async () => {
       weight: "37.6 g",
       waterrating: "Swim, 5 ATM",
       colordisplay: "Yes",
-      category: categories[3]._id,
+      category: categories[2]._id,
+      qty: 89,
     },
     {
       name: "Venu™",
@@ -593,7 +622,8 @@ db.once("open", async () => {
       weight: "46.3 g",
       waterrating: "Swim, 5 ATM",
       colordisplay: "Yes",
-      category: categories[3]._id,
+      category: categories[2]._id,
+      qty: 2,
     },
     {
       name: "First Avenger",
@@ -611,7 +641,8 @@ db.once("open", async () => {
       weight: "50.5 g",
       waterrating: "Swim, 5 ATM",
       colordisplay: "Yes",
-      category: categories[4]._id,
+      category: categories[3]._id,
+      qty: 45,
     },
     {
       name: "Darth Vader",
@@ -629,7 +660,8 @@ db.once("open", async () => {
       weight: "50.5 g",
       waterrating: "Swim, 5 ATM",
       colordisplay: "Yes",
-      category: categories[4]._id,
+      category: categories[3]._id,
+      qty: 43,
     },
     {
       name: "Captain Marvel",
@@ -647,7 +679,8 @@ db.once("open", async () => {
       weight: "40.0 g",
       waterrating: "Swim, 5 ATM",
       colordisplay: "Yes",
-      category: categories[4]._id,
+      category: categories[3]._id,
+      qty: 46,
     },
     {
       name: "Rey",
@@ -665,7 +698,8 @@ db.once("open", async () => {
       weight: "40.0 g",
       waterrating: "Swim, 5 ATM",
       colordisplay: "Yes",
-      category: categories[4]._id,
+      category: categories[3]._id,
+      qty: 48,
     },
     {
       name: "vívoactive® 4",
@@ -683,7 +717,8 @@ db.once("open", async () => {
       weight: "50.5 g",
       waterrating: "Swim, 5 ATM",
       colordisplay: "Yes",
-      category: categories[3]._id,
+      category: categories[2]._id,
+      qty: 49,
     },
     {
       name: "vívoactive® 4S",
@@ -701,7 +736,8 @@ db.once("open", async () => {
       weight: "40.0 g",
       waterrating: "Swim, 5 ATM",
       colordisplay: "Yes",
-      category: categories[3]._id,
+      category: categories[2]._id,
+      qty: 42,
     },
     {
       name: "vívoactive® 3 Music (Verizon)",
@@ -719,7 +755,8 @@ db.once("open", async () => {
       weight: "39.0 g",
       waterrating: "Swim, 5 ATM",
       colordisplay: "Yes",
-      category: categories[3]._id,
+      category: categories[2]._id,
+      qty: 47,
     },
     {
       name: "vivoactive 3 Music",
@@ -737,7 +774,8 @@ db.once("open", async () => {
       weight: "39.0 g",
       waterrating: "Swim, 5 ATM",
       colordisplay: "Yes",
-      category: categories[3]._id,
+      category: categories[2]._id,
+      qty: 46,
     },
     {
       name: "vívoactive® 3",
@@ -755,7 +793,8 @@ db.once("open", async () => {
       weight: "43.0 g",
       waterrating: "Swim, 5 ATM",
       colordisplay: "Yes",
-      category: categories[3]._id,
+      category: categories[2]._id,
+      qty: 46,
     },
     {
       name: "Lily™",
@@ -773,7 +812,8 @@ db.once("open", async () => {
       weight: "24.0 g",
       waterrating: "5 ATM",
       colordisplay: "no (16 level grayscale)",
-      category: categories[5]._id,
+      category: categories[4]._id,
+      qty: 45,
     },
     {
       name: "vívomove® Luxe",
@@ -791,7 +831,8 @@ db.once("open", async () => {
         "Case only: 44.5 g\nWith leather strap: 55.5 g\nWith Milanese strap: 86.0 g",
       waterrating: "Swim, 5 ATM",
       colordisplay: "Yes",
-      category: categories[5]._id,
+      category: categories[4]._id,
+      qty: 54,
     },
     {
       name: "vívomove® Style",
@@ -808,7 +849,8 @@ db.once("open", async () => {
         "Case only: 25.5 g\nWith silicone strap: 42.0 g\nWith nylon strap: 35.0 g",
       waterrating: "Swim, 5 ATM",
       colordisplay: "Yes",
-      category: categories[5]._id,
+      category: categories[4]._id,
+      qty: 54,
     },
     {
       name: "vívomove® 3S",
@@ -825,7 +867,8 @@ db.once("open", async () => {
       weight: "Case only: 24.5 g\nWith silicone strap: 38.6 g",
       waterrating: "Swim, 5 ATM",
       colordisplay: "",
-      category: categories[5]._id,
+      category: categories[4]._id,
+      qty: 52,
     },
     {
       name: "vívomove® 3",
@@ -841,7 +884,8 @@ db.once("open", async () => {
       weight: "Case only: 29.6 g\nWith silicone strap: 46.1 g",
       waterrating: "Swim, 5 ATM",
       colordisplay: "",
-      category: categories[5]._id,
+      category: categories[4]._id,
+      qty: 53,
     },
     {
       name: "vívomove® HR",
@@ -858,7 +902,8 @@ db.once("open", async () => {
       weight: "Sport: 40.8 g\nPremium: 56.5 g",
       waterrating: "Swim, 5 ATM",
       colordisplay: "",
-      category: categories[5]._id,
+      category: categories[4]._id,
+      qty: 58,
     },
     {
       name: "Vivosport",
@@ -875,7 +920,8 @@ db.once("open", async () => {
       weight: "Small/medium: 24.1 g",
       waterrating: "Swim",
       colordisplay: "Yes",
-      category: categories[6]._id,
+      category: categories[5]._id,
+      qty: 58,
     },
     {
       name: "Vivosmart 4",
@@ -892,7 +938,8 @@ db.once("open", async () => {
       weight: "Small/medium: 16.5 g",
       waterrating: "Swim",
       colordisplay: "",
-      category: categories[6]._id,
+      category: categories[5]._id,
+      qty: 67,
     },
     {
       name: "vívofit® 4",
@@ -909,7 +956,8 @@ db.once("open", async () => {
       weight: "Small/medium: 25 g\nLarge: 25.5 g",
       waterrating: "Swim",
       colordisplay: "",
-      category: categories[6]._id,
+      category: categories[5]._id,
+      qty: 66,
     },
     {
       name: "vívofit® jr. 3",
@@ -926,7 +974,8 @@ db.once("open", async () => {
       weight: "25 g",
       waterrating: "5 ATM",
       colordisplay: "Yes",
-      category: categories[7]._id,
+      category: categories[6]._id,
+      qty: 66,
     },
     {
       name: "vívofit® jr. 2",
@@ -944,7 +993,8 @@ db.once("open", async () => {
       weight: "17.5 g",
       waterrating: "5 ATM",
       colordisplay: "",
-      category: categories[7]._id,
+      category: categories[6]._id,
+      qty: 63,
     },
     {
       name: "vívofit® jr.",
@@ -960,7 +1010,8 @@ db.once("open", async () => {
       weight: "17.5 g",
       waterrating: "5 ATM",
       colordisplay: "",
-      category: categories[7]._id,
+      category: categories[6]._id,
+      qty: 63,
     },
     {
       name: "Garmin Swim™ 2",
@@ -977,7 +1028,8 @@ db.once("open", async () => {
       weight: "36 g",
       waterrating: "Swim, 5 ATM",
       colordisplay: "Yes",
-      category: categories[8]._id,
+      category: categories[5]._id,
+      qty: 62,
     },
     {
       name: "tactix® Delta - Solar Edition with Ballistics",
@@ -994,7 +1046,8 @@ db.once("open", async () => {
       weight: "Steel: 97 g (case only: 69 g)",
       waterrating: "10 ATM",
       colordisplay: "Yes",
-      category: categories[9]._id,
+      category: categories[7]._id,
+      qty: 69,
     },
     {
       name: "tactix® Delta - Solar Edition",
@@ -1011,7 +1064,8 @@ db.once("open", async () => {
       weight: "Steel: 97 g (case only: 69 g)",
       waterrating: "10 ATM",
       colordisplay: "Yes",
-      category: categories[9]._id,
+      category: categories[7]._id,
+      qty: 60,
     },
     {
       name: "tactix® Delta Sapphire",
@@ -1028,7 +1082,8 @@ db.once("open", async () => {
       weight: "Steel: 97 g (case only: 69 g)",
       waterrating: "10 ATM",
       colordisplay: "",
-      category: categories[9]._id,
+      category: categories[7]._id,
+      qty: 50,
     },
     {
       name: "tactix® Charlie",
@@ -1045,7 +1100,8 @@ db.once("open", async () => {
       weight: "90 g",
       waterrating: "10 ATM",
       colordisplay: "Yes",
-      category: categories[9]._id,
+      category: categories[7]._id,
+      qty: 40,
     },
     {
       name: "Instinct® Solar – Tactical Edition",
@@ -1063,7 +1119,8 @@ db.once("open", async () => {
       weight: "53 g",
       waterrating: "10 ATM",
       colordisplay: "",
-      category: categories[9]._id,
+      category: categories[7]._id,
+      qty: 25,
     },
     {
       name: "Instinct® Solar",
@@ -1080,7 +1137,8 @@ db.once("open", async () => {
       weight: "53 g",
       waterrating: "10 ATM",
       colordisplay: "",
-      category: categories[10]._id,
+      category: categories[8]._id,
+      qty: 23,
     },
     {
       name: "Instinct® Solar – Surf Edition",
@@ -1098,7 +1156,8 @@ db.once("open", async () => {
       weight: "53 g",
       waterrating: "10 ATM",
       colordisplay: "",
-      category: categories[11]._id,
+      category: categories[9]._id,
+      qty: 24,
     },
     {
       name: "Instinct® – Tactical Edition",
@@ -1115,7 +1174,8 @@ db.once("open", async () => {
       weight: "52 g",
       waterrating: "10 ATM",
       colordisplay: "",
-      category: categories[9]._id,
+      category: categories[7]._id,
+      qty: 28,
     },
     {
       name: "Instinct® - Esports Edition",
@@ -1132,7 +1192,8 @@ db.once("open", async () => {
       weight: "52 g",
       waterrating: "10 ATM",
       colordisplay: "",
-      category: categories[4]._id,
+      category: categories[3]._id,
+      qty: 27,
     },
     {
       name: "Instinct®",
@@ -1149,7 +1210,8 @@ db.once("open", async () => {
       weight: "52 g",
       waterrating: "10 ATM",
       colordisplay: "",
-      category: categories[10]._id,
+      category: categories[8]._id,
+      qty: 45,
     },
     {
       name: "Approach® S62",
@@ -1166,7 +1228,8 @@ db.once("open", async () => {
       weight: "2.2 oz (61 g)",
       waterrating: "5 ATM",
       colordisplay: "Yes",
-      category: categories[12]._id,
+      category: categories[10]._id,
+      qty: 49,
     },
     {
       name: "Approach® S60",
@@ -1183,7 +1246,8 @@ db.once("open", async () => {
       weight: "standard: 1.8 oz (52 g)",
       waterrating: "5 ATM",
       colordisplay: "Yes",
-      category: categories[12]._id,
+      category: categories[10]._id,
+      qty: 60,
     },
     {
       name: "Approach® G12",
@@ -1200,7 +1264,8 @@ db.once("open", async () => {
       weight: "0.9 oz (25.1 g)",
       waterrating: "IPX7",
       colordisplay: "",
-      category: categories[12]._id,
+      category: categories[10]._id,
+      qty: 73,
     },
     {
       name: "Approach® S42",
@@ -1217,7 +1282,8 @@ db.once("open", async () => {
       weight: "1.5 oz (43 g)",
       waterrating: "5 ATM",
       colordisplay: "Yes",
-      category: categories[12]._id,
+      category: categories[10]._id,
+      qty: 70,
     },
     {
       name: "Approach® S40",
@@ -1233,7 +1299,8 @@ db.once("open", async () => {
       weight: "1.5 oz (43 g)",
       waterrating: "5 ATM",
       colordisplay: "Yes",
-      category: categories[12]._id,
+      category: categories[10]._id,
+      qty: 72,
     },
     {
       name: "Approach® S20",
@@ -1249,7 +1316,8 @@ db.once("open", async () => {
       weight: "1.5 oz (42.2 g)",
       waterrating: " 5 ATM",
       colordisplay: "",
-      category: categories[12]._id,
+      category: categories[10]._id,
+      qty: 74,
     },
     {
       name: "Approach® S12",
@@ -1266,7 +1334,8 @@ db.once("open", async () => {
       weight: "1.20 oz (34.1 g)",
       waterrating: "5 ATM",
       colordisplay: "",
-      category: categories[12]._id,
+      category: categories[10]._id,
+      qty: 75,
     },
     {
       name: "Approach® S10",
@@ -1282,7 +1351,8 @@ db.once("open", async () => {
       weight: "1.2 oz (35.0 g)",
       waterrating: "5 ATM",
       colordisplay: "",
-      category: categories[12]._id,
+      category: categories[10]._id,
+      qty: 75,
     },
     {
       name: "Approach X40",
@@ -1299,7 +1369,8 @@ db.once("open", async () => {
       weight: "1.1 oz (31 g)",
       waterrating: "5 ATM",
       colordisplay: "Yes",
-      category: categories[12]._id,
+      category: categories[10]._id,
+      qty: 47,
     },
     {
       name: "Approach® X10",
@@ -1315,7 +1386,8 @@ db.once("open", async () => {
       weight: "1.1 oz (31 g)",
       waterrating: "5 ATM",
       colordisplay: "",
-      category: categories[12]._id,
+      category: categories[10]._id,
+      qty: 12,
     },
     {
       name: "D2™ Delta PX",
@@ -1332,7 +1404,8 @@ db.once("open", async () => {
       weight: "87 g",
       waterrating: "10 ATM",
       colordisplay: "Yes",
-      category: categories[13]._id,
+      category: categories[11]._id,
+      qty: 39,
     },
     {
       name: "D2™ Delta",
@@ -1349,7 +1422,8 @@ db.once("open", async () => {
       weight: "76 g",
       waterrating: "10 ATM",
       colordisplay: "Yes",
-      category: categories[13]._id,
+      category: categories[11]._id,
+      qty: 83,
     },
     {
       name: "D2™ Delta S",
@@ -1366,7 +1440,8 @@ db.once("open", async () => {
       weight: "65 g",
       waterrating: "10 ATM",
       colordisplay: "Yes",
-      category: categories[13]._id,
+      category: categories[11]._id,
+      qty: 52,
     },
     {
       name: "D2™ Air",
@@ -1382,7 +1457,8 @@ db.once("open", async () => {
       weight: "46.3g",
       waterrating: "5 ATM",
       colordisplay: "Yes",
-      category: categories[13]._id,
+      category: categories[11]._id,
+      qty: 42,
     },
     {
       name: "Descent™ Mk1",
@@ -1401,7 +1477,8 @@ db.once("open", async () => {
         "steel with silicone band: 101 g\ntitanium with silicone band: 94 g\ntitanium with titanium band: 145 g",
       waterrating: "Dive (Designed to comply with EN13319)",
       colordisplay: "Yes",
-      category: categories[14]._id,
+      category: categories[12]._id,
+      qty: 42,
     },
     {
       name: "Descent™ Mk2",
@@ -1418,7 +1495,8 @@ db.once("open", async () => {
       weight: "silicone band: 103.8 g",
       waterrating: "Dive (100 meters)",
       colordisplay: "Yes",
-      category: categories[14]._id,
+      category: categories[12]._id,
+      qty: 44,
     },
     {
       name: "Descent™ Mk2i",
@@ -1435,7 +1513,8 @@ db.once("open", async () => {
       weight: "silicone band: 99.6 g\ntitanium band: 160.3 g",
       waterrating: "Dive (100 meters)",
       colordisplay: "Yes",
-      category: categories[14]._id,
+      category: categories[12]._id,
+      qty: 44,
     },
     {
       name: "Descent™ Mk2S",
@@ -1452,7 +1531,8 @@ db.once("open", async () => {
       weight: "silicone band: 60 g\ncase only: 41 g",
       waterrating: "Dive (100 meters)",
       colordisplay: "Yes",
-      category: categories[14]._id,
+      category: categories[12]._id,
+      qty: 64,
     },
     {
       name: "quatix® 6X Solar",
@@ -1468,7 +1548,8 @@ db.once("open", async () => {
       weight: "82 g (54 g, case only)",
       waterrating: "10 ATM",
       colordisplay: "Yes",
-      category: categories[15]._id,
+      category: categories[13]._id,
+      qty: 54,
     },
     {
       name: "quatix® 6",
@@ -1485,7 +1566,8 @@ db.once("open", async () => {
       weight: "Steel: 83 g (case only: 60 g)",
       waterrating: "10 ATM",
       colordisplay: "Yes",
-      category: categories[15]._id,
+      category: categories[13]._id,
+      qty: 72,
     },
     {
       name: "quatix® 5 Sapphire",
@@ -1502,7 +1584,8 @@ db.once("open", async () => {
       weight: "Silicone band: 85 g\nMetal band: 156 g",
       waterrating: "10 ATM",
       colordisplay: "Yes",
-      category: categories[15]._id,
+      category: categories[13]._id,
+      qty: 38,
     },
     {
       name: "quatix® 5",
@@ -1519,7 +1602,8 @@ db.once("open", async () => {
       weight: "silicone band: 85 g\nmetal band: 156 g",
       waterrating: "10 ATM",
       colordisplay: "Yes",
-      category: categories[15]._id,
+      category: categories[13]._id,
+      qty: 101,
     },
     {
       name: "MARQ® Driver",
@@ -1535,7 +1619,8 @@ db.once("open", async () => {
       weight: "128 g (95 g with silicone rubber)",
       waterrating: "10 ATM",
       colordisplay: "Yes",
-      category: categories[16]._id,
+      category: categories[14]._id,
+      qty: 94,
     },
     {
       name: "MARQ® Commander",
@@ -1552,7 +1637,8 @@ db.once("open", async () => {
       weight: "87 g (94 g with silicone rubber)",
       waterrating: "10 ATM",
       colordisplay: "Yes",
-      category: categories[9]._id,
+      category: categories[7]._id,
+      qty: 92,
     },
     {
       name: "MARQ® Aviator",
@@ -1569,7 +1655,8 @@ db.once("open", async () => {
       weight: "144 g (95 g with silicone rubber)",
       waterrating: "10 ATM",
       colordisplay: "Yes",
-      category: categories[13]._id,
+      category: categories[11]._id,
+      qty: 111,
     },
     {
       name: "MARQ® Captain",
@@ -1585,7 +1672,8 @@ db.once("open", async () => {
       weight: "88 g (95 g with silicone rubber)",
       waterrating: "10 ATM",
       colordisplay: "Yes",
-      category: categories[15]._id,
+      category: categories[13]._id,
+      qty: 91,
     },
     {
       name: "MARQ® Adventurer",
@@ -1602,7 +1690,8 @@ db.once("open", async () => {
       weight: "87 g (94 g with silicone rubber)",
       waterrating: "10 ATM",
       colordisplay: "Yes",
-      category: categories[10]._id,
+      category: categories[8]._id,
+      qty: 77,
     },
     {
       name: "MARQ® Athlete",
@@ -1620,7 +1709,8 @@ db.once("open", async () => {
       weight: "94 g",
       waterrating: "10 ATM",
       colordisplay: "Yes",
-      category: categories[6]._id,
+      category: categories[5]._id,
+      qty: 40,
     },
     {
       name: "MARQ® Golfer",
@@ -1637,7 +1727,8 @@ db.once("open", async () => {
       weight: "88 g (95 g with silicone rubber)",
       waterrating: "10 ATM",
       colordisplay: "Yes",
-      category: categories[12]._id,
+      category: categories[10]._id,
+      qty: 63,
     },
     {
       name: "MARQ® Driver Performance Edition",
@@ -1653,7 +1744,8 @@ db.once("open", async () => {
       weight: "95 g",
       waterrating: "10 ATM",
       colordisplay: "Yes",
-      category: categories[16]._id,
+      category: categories[14]._id,
+      qty: 144,
     },
     {
       name: "MARQ® Captain: American Magic Edition",
@@ -1669,7 +1761,8 @@ db.once("open", async () => {
       weight: "95 g",
       waterrating: "10 ATM",
       colordisplay: "Yes",
-      category: categories[6]._id,
+      category: categories[5]._id,
+      qty: 27,
     },
     {
       name: "MARQ® Athlete Performance Edition",
@@ -1686,7 +1779,8 @@ db.once("open", async () => {
       weight: "94 g",
       waterrating: "10 ATM",
       colordisplay: "Yes",
-      category: categories[6]._id,
+      category: categories[5]._id,
+      qty: 51,
     },
     {
       name: "MARQ® Adventurer Performance Edition",
@@ -1703,7 +1797,8 @@ db.once("open", async () => {
       weight: "95 g",
       waterrating: "10 ATM",
       colordisplay: "Yes",
-      category: categories[10]._id,
+      category: categories[8]._id,
+      qty: 58,
     },
     {
       name: "MARQ® Aviator Performance Edition",
@@ -1720,7 +1815,8 @@ db.once("open", async () => {
       weight: "95 g",
       waterrating: "10 ATM",
       colordisplay: "Yes",
-      category: categories[13]._id,
+      category: categories[11]._id,
+      qty: 81,
     },
   ]);
 
