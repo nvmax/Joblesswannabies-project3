@@ -9,7 +9,7 @@ function Nav() {
             <ul className='nav-list-grid nav-list-style font-Poppins'>
                 <li><a>Signup</a></li>
                 <li><a>Login</a></li>
-                <li><a>Browse</a></li>
+                <li><Link className='nav-list-item-styling' to="/browse" >Browse</Link></li>
                 <li><i className="fas fa-shopping-cart nav-icon-style"></i></li>
             </ul>
         </nav>

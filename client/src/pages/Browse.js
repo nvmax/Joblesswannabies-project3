@@ -1,11 +1,11 @@
 import ProductList from '../components/ProductList';
 
 
-const Home = () => {
+const Browse = () => {
 
     return (
-        <div></div>
+        <ProductList />
     )
 };
 
-export default Home;
+export default Browse;
