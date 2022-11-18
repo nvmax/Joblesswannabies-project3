@@ -36,7 +36,6 @@
 
 .nav-style {
     background-color: #66717E;
-    color: #EFE7DA;
     padding: 8px;
  }
  
@@ -53,10 +52,13 @@
  
  .nav-title {
     font-size: 50px;
+    color: #EFE7DA;
+    text-decoration: none;
  }
  
  .nav-icon-style {
     font-size: 20px;
+    color: #EFE7DA;
  }
  
  /* Nav Styling Media queries */
