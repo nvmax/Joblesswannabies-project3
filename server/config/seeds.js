@@ -1028,7 +1028,7 @@ db.once("open", async () => {
       weight: "36 g",
       waterrating: "Swim, 5 ATM",
       colordisplay: "Yes",
-      category: categories[5]._id,
+      category: categories[7]._id,
       qty: 62,
     },
     {
@@ -1046,7 +1046,7 @@ db.once("open", async () => {
       weight: "Steel: 97 g (case only: 69 g)",
       waterrating: "10 ATM",
       colordisplay: "Yes",
-      category: categories[7]._id,
+      category: categories[8]._id,
       qty: 69,
     },
     {
@@ -1064,7 +1064,7 @@ db.once("open", async () => {
       weight: "Steel: 97 g (case only: 69 g)",
       waterrating: "10 ATM",
       colordisplay: "Yes",
-      category: categories[7]._id,
+      category: categories[8]._id,
       qty: 60,
     },
     {
@@ -1082,7 +1082,7 @@ db.once("open", async () => {
       weight: "Steel: 97 g (case only: 69 g)",
       waterrating: "10 ATM",
       colordisplay: "",
-      category: categories[7]._id,
+      category: categories[8]._id,
       qty: 50,
     },
     {
@@ -1100,7 +1100,7 @@ db.once("open", async () => {
       weight: "90 g",
       waterrating: "10 ATM",
       colordisplay: "Yes",
-      category: categories[7]._id,
+      category: categories[8]._id,
       qty: 40,
     },
     {
@@ -1119,7 +1119,7 @@ db.once("open", async () => {
       weight: "53 g",
       waterrating: "10 ATM",
       colordisplay: "",
-      category: categories[7]._id,
+      category: categories[8]._id,
       qty: 25,
     },
     {
@@ -1137,7 +1137,7 @@ db.once("open", async () => {
       weight: "53 g",
       waterrating: "10 ATM",
       colordisplay: "",
-      category: categories[8]._id,
+      category: categories[9]._id,
       qty: 23,
     },
     {
@@ -1156,7 +1156,7 @@ db.once("open", async () => {
       weight: "53 g",
       waterrating: "10 ATM",
       colordisplay: "",
-      category: categories[9]._id,
+      category: categories[10]._id,
       qty: 24,
     },
     {
@@ -1174,7 +1174,7 @@ db.once("open", async () => {
       weight: "52 g",
       waterrating: "10 ATM",
       colordisplay: "",
-      category: categories[7]._id,
+      category: categories[8]._id,
       qty: 28,
     },
     {
@@ -1210,7 +1210,7 @@ db.once("open", async () => {
       weight: "52 g",
       waterrating: "10 ATM",
       colordisplay: "",
-      category: categories[8]._id,
+      category: categories[9]._id,
       qty: 45,
     },
     {
@@ -1228,7 +1228,7 @@ db.once("open", async () => {
       weight: "2.2 oz (61 g)",
       waterrating: "5 ATM",
       colordisplay: "Yes",
-      category: categories[10]._id,
+      category: categories[11]._id,
       qty: 49,
     },
     {
@@ -1246,7 +1246,7 @@ db.once("open", async () => {
       weight: "standard: 1.8 oz (52 g)",
       waterrating: "5 ATM",
       colordisplay: "Yes",
-      category: categories[10]._id,
+      category: categories[11]._id,
       qty: 60,
     },
     {
@@ -1264,7 +1264,7 @@ db.once("open", async () => {
       weight: "0.9 oz (25.1 g)",
       waterrating: "IPX7",
       colordisplay: "",
-      category: categories[10]._id,
+      category: categories[11]._id,
       qty: 73,
     },
     {
@@ -1282,7 +1282,7 @@ db.once("open", async () => {
       weight: "1.5 oz (43 g)",
       waterrating: "5 ATM",
       colordisplay: "Yes",
-      category: categories[10]._id,
+      category: categories[11]._id,
       qty: 70,
     },
     {
@@ -1299,7 +1299,7 @@ db.once("open", async () => {
       weight: "1.5 oz (43 g)",
       waterrating: "5 ATM",
       colordisplay: "Yes",
-      category: categories[10]._id,
+      category: categories[11]._id,
       qty: 72,
     },
     {
@@ -1316,7 +1316,7 @@ db.once("open", async () => {
       weight: "1.5 oz (42.2 g)",
       waterrating: " 5 ATM",
       colordisplay: "",
-      category: categories[10]._id,
+      category: categories[11]._id,
       qty: 74,
     },
     {
@@ -1334,7 +1334,7 @@ db.once("open", async () => {
       weight: "1.20 oz (34.1 g)",
       waterrating: "5 ATM",
       colordisplay: "",
-      category: categories[10]._id,
+      category: categories[11]._id,
       qty: 75,
     },
     {
@@ -1351,7 +1351,7 @@ db.once("open", async () => {
       weight: "1.2 oz (35.0 g)",
       waterrating: "5 ATM",
       colordisplay: "",
-      category: categories[10]._id,
+      category: categories[11]._id,
       qty: 75,
     },
     {
@@ -1369,7 +1369,7 @@ db.once("open", async () => {
       weight: "1.1 oz (31 g)",
       waterrating: "5 ATM",
       colordisplay: "Yes",
-      category: categories[10]._id,
+      category: categories[11]._id,
       qty: 47,
     },
     {
@@ -1386,7 +1386,7 @@ db.once("open", async () => {
       weight: "1.1 oz (31 g)",
       waterrating: "5 ATM",
       colordisplay: "",
-      category: categories[10]._id,
+      category: categories[11]._id,
       qty: 12,
     },
     {
@@ -1404,7 +1404,7 @@ db.once("open", async () => {
       weight: "87 g",
       waterrating: "10 ATM",
       colordisplay: "Yes",
-      category: categories[11]._id,
+      category: categories[12]._id,
       qty: 39,
     },
     {
@@ -1422,7 +1422,7 @@ db.once("open", async () => {
       weight: "76 g",
       waterrating: "10 ATM",
       colordisplay: "Yes",
-      category: categories[11]._id,
+      category: categories[12]._id,
       qty: 83,
     },
     {
@@ -1440,7 +1440,7 @@ db.once("open", async () => {
       weight: "65 g",
       waterrating: "10 ATM",
       colordisplay: "Yes",
-      category: categories[11]._id,
+      category: categories[12]._id,
       qty: 52,
     },
     {
@@ -1457,7 +1457,7 @@ db.once("open", async () => {
       weight: "46.3g",
       waterrating: "5 ATM",
       colordisplay: "Yes",
-      category: categories[11]._id,
+      category: categories[12]._id,
       qty: 42,
     },
     {
@@ -1477,7 +1477,7 @@ db.once("open", async () => {
         "steel with silicone band: 101 g\ntitanium with silicone band: 94 g\ntitanium with titanium band: 145 g",
       waterrating: "Dive (Designed to comply with EN13319)",
       colordisplay: "Yes",
-      category: categories[12]._id,
+      category: categories[13]._id,
       qty: 42,
     },
     {
@@ -1495,7 +1495,7 @@ db.once("open", async () => {
       weight: "silicone band: 103.8 g",
       waterrating: "Dive (100 meters)",
       colordisplay: "Yes",
-      category: categories[12]._id,
+      category: categories[13]._id,
       qty: 44,
     },
     {
@@ -1513,7 +1513,7 @@ db.once("open", async () => {
       weight: "silicone band: 99.6 g\ntitanium band: 160.3 g",
       waterrating: "Dive (100 meters)",
       colordisplay: "Yes",
-      category: categories[12]._id,
+      category: categories[13]._id,
       qty: 44,
     },
     {
@@ -1531,7 +1531,7 @@ db.once("open", async () => {
       weight: "silicone band: 60 g\ncase only: 41 g",
       waterrating: "Dive (100 meters)",
       colordisplay: "Yes",
-      category: categories[12]._id,
+      category: categories[13]._id,
       qty: 64,
     },
     {
@@ -1548,7 +1548,7 @@ db.once("open", async () => {
       weight: "82 g (54 g, case only)",
       waterrating: "10 ATM",
       colordisplay: "Yes",
-      category: categories[13]._id,
+      category: categories[14]._id,
       qty: 54,
     },
     {
@@ -1566,7 +1566,7 @@ db.once("open", async () => {
       weight: "Steel: 83 g (case only: 60 g)",
       waterrating: "10 ATM",
       colordisplay: "Yes",
-      category: categories[13]._id,
+      category: categories[14]._id,
       qty: 72,
     },
     {
@@ -1584,7 +1584,7 @@ db.once("open", async () => {
       weight: "Silicone band: 85 g\nMetal band: 156 g",
       waterrating: "10 ATM",
       colordisplay: "Yes",
-      category: categories[13]._id,
+      category: categories[14]._id,
       qty: 38,
     },
     {
@@ -1602,7 +1602,7 @@ db.once("open", async () => {
       weight: "silicone band: 85 g\nmetal band: 156 g",
       waterrating: "10 ATM",
       colordisplay: "Yes",
-      category: categories[13]._id,
+      category: categories[14]._id,
       qty: 101,
     },
     {
@@ -1619,7 +1619,7 @@ db.once("open", async () => {
       weight: "128 g (95 g with silicone rubber)",
       waterrating: "10 ATM",
       colordisplay: "Yes",
-      category: categories[14]._id,
+      category: categories[15]._id,
       qty: 94,
     },
     {
@@ -1637,7 +1637,7 @@ db.once("open", async () => {
       weight: "87 g (94 g with silicone rubber)",
       waterrating: "10 ATM",
       colordisplay: "Yes",
-      category: categories[7]._id,
+      category: categories[8]._id,
       qty: 92,
     },
     {
@@ -1655,7 +1655,7 @@ db.once("open", async () => {
       weight: "144 g (95 g with silicone rubber)",
       waterrating: "10 ATM",
       colordisplay: "Yes",
-      category: categories[11]._id,
+      category: categories[12]._id,
       qty: 111,
     },
     {
@@ -1672,7 +1672,7 @@ db.once("open", async () => {
       weight: "88 g (95 g with silicone rubber)",
       waterrating: "10 ATM",
       colordisplay: "Yes",
-      category: categories[13]._id,
+      category: categories[14]._id,
       qty: 91,
     },
     {
@@ -1690,7 +1690,7 @@ db.once("open", async () => {
       weight: "87 g (94 g with silicone rubber)",
       waterrating: "10 ATM",
       colordisplay: "Yes",
-      category: categories[8]._id,
+      category: categories[9]._id,
       qty: 77,
     },
     {
@@ -1727,7 +1727,7 @@ db.once("open", async () => {
       weight: "88 g (95 g with silicone rubber)",
       waterrating: "10 ATM",
       colordisplay: "Yes",
-      category: categories[10]._id,
+      category: categories[11]._id,
       qty: 63,
     },
     {
@@ -1744,7 +1744,7 @@ db.once("open", async () => {
       weight: "95 g",
       waterrating: "10 ATM",
       colordisplay: "Yes",
-      category: categories[14]._id,
+      category: categories[15]._id,
       qty: 144,
     },
     {
@@ -1797,7 +1797,7 @@ db.once("open", async () => {
       weight: "95 g",
       waterrating: "10 ATM",
       colordisplay: "Yes",
-      category: categories[8]._id,
+      category: categories[9]._id,
       qty: 58,
     },
     {
@@ -1815,7 +1815,7 @@ db.once("open", async () => {
       weight: "95 g",
       waterrating: "10 ATM",
       colordisplay: "Yes",
-      category: categories[11]._id,
+      category: categories[12]._id,
       qty: 81,
     },
   ]);
