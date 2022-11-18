@@ -46,9 +46,9 @@ function Categories() {
     
 
     return (
-        <div >
+        <div className='category-parent-div'>
             <div className='product-category-title-styling font-Poppins'>Categories</div>
-            <select  onChange = {handleChange} >
+            <select className='category-select font-Poppins'  onChange = {handleChange} >
                 <option className='product-category-styling font-Poppins' value=''>All Products</option>
                 {categories.map((category) => (
                     <option

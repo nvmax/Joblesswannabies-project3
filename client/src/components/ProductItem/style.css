@@ -1,13 +1,50 @@
 /* Product Item Styling */
 
 .product-item-card-styling {
-    width: 85%;
-    align-self: center;
-    justify-self: center;
-    justify-items: center;
- }
- 
- .product-item-title-styling {
-    margin-top: 1px;
-    font-size: 14px;
- }
+   width: 85%;
+   align-self: center;
+   justify-self: center;
+   justify-items: center;
+   border-radius: 5px;
+   background-color: #66717E;
+   padding: 10px;
+}
+
+.product-item-link-styling {
+   text-decoration: none;
+}
+
+.product-item-title-styling {
+   margin-top: 1px;
+   font-size: 14px;
+   text-align: center;
+   color: #EFE7DA;
+}
+
+.product-image-styling {
+   width: 85%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 5px;  
+}
+
+.product-image-styling:hover {
+   cursor: pointer;
+}
+
+.product-item-price-styling {
+   text-align: center;
+}
+
+.product-item-addCart-div-styling {
+   text-align: center;
+   border-radius: 5px;
+   margin-top: 2%;
+}
+
+.add-cart-btn:hover {
+   cursor: pointer;
+}
+
+

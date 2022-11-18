@@ -22,3 +22,19 @@ body {
 .font-Poppins {
    font-family: 'Poppins';
 }
+
+/* Single Item Page Grid */
+
+.single-item-grid {
+   display: grid;
+   gap: 1rem;
+   grid-template-columns: repeat(2, 1fr);
+}
+
+.single-item-details-grid {
+   display: grid;
+   grid-template-columns: 1;
+}
+
+
+/* Single Item Page Styling */

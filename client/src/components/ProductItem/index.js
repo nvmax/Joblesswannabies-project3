@@ -8,50 +8,52 @@ import { idbPromise } from "../../utils/helpers";
 import './style.css'
 
 const ProductItem = (item) => {
-    const [state, dispatch] = useStoreContext();
+  const [state, dispatch] = useStoreContext();
 
-    const {
-        _id,
-        name,
-        picture,
-        msrp,
-        quantity
-    } = item;
+  const {
+    _id,
+    name,
+    picture,
+    msrp,
+    quantity
+  } = item;
 
-    const { cart } = state
+  const { cart } = state
 
-    const addToCart = () => {
-        const itemInCart = cart.find((cartItem) => cartItem._id === _id)
-        if (itemInCart) {
-          dispatch({
-            type: UPDATE_CART_QUANTITY,
-            _id: _id,
-            purchaseQuantity: parseInt(itemInCart.purchaseQuantity) + 1
-          });
-          idbPromise('cart', 'put', {
-            ...itemInCart,
-            purchaseQuantity: parseInt(itemInCart.purchaseQuantity) + 1
-          });
-        } else {
-          dispatch({
-            type: ADD_TO_CART,
-            product: { ...item, purchaseQuantity: 1 }
-          });
-          idbPromise('cart', 'put', { ...item, purchaseQuantity: 1 });
-        }
-      }
+  const addToCart = () => {
+    const itemInCart = cart.find((cartItem) => cartItem._id === _id)
+    if (itemInCart) {
+      dispatch({
+        type: UPDATE_CART_QUANTITY,
+        _id: _id,
+        purchaseQuantity: parseInt(itemInCart.purchaseQuantity) + 1
+      });
+      idbPromise('cart', 'put', {
+        ...itemInCart,
+        purchaseQuantity: parseInt(itemInCart.purchaseQuantity) + 1
+      });
+    } else {
+      dispatch({
+        type: ADD_TO_CART,
+        product: { ...item, purchaseQuantity: 1 }
+      });
+      idbPromise('cart', 'put', { ...item, purchaseQuantity: 1 });
+    }
+  }
 
-    return (
-        <div className='product-item-card-styling'>
-            <Link to={`/products/${_id}`}><img  className='product-item-card-styling' src={picture} />
-                <h1 className='product-item-title-styling font-Poppins'>{name}</h1>
-            </Link>
-            <div>
-        <span>${msrp}</span>
+  return (
+    <div className='product-item-card-styling'>
+      <Link className="product-item-link-styling" to={`/products/${_id}`}><img className='product-image-styling' src={picture} />
+        <h1 className='product-item-title-styling font-Poppins'>{name}</h1>
+      </Link>
+      <div className="product-item-price-styling">
+        <span className="product-item-cart-price-styling">${msrp}</span>
       </div>
-      <button onClick={addToCart}>Add to cart</button>
-        </div>
-    )
+      <div className="product-item-addCart-div-styling">
+        <button className="add-cart-btn font-Poppins" onClick={addToCart}>Add to cart</button>
+      </div>
+    </div>
+  )
 };
 
 export default ProductItem;

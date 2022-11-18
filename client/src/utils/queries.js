@@ -6,7 +6,7 @@ export const QUERY_PRODUCTS = gql`
       _id
       name
       picture
-      discription
+      description
       msrp
       review
       releasedate

@@ -14,3 +14,14 @@
     font-size: 22px;
  }
 
+.category-select {
+  text-align: center;
+  padding: 2%;
+  width: 100%;
+  font-size: 18px;
+}
+
+.category-parent-div {
+   text-align: center;
+}
+
