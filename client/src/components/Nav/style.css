@@ -45,6 +45,11 @@
     font-size: 15px;
     justify-items: center;
  }
+
+ .nav-list-item-styling {
+   text-decoration: none;
+   color: #EFE7DA;
+ }
  
  .nav-title {
     font-size: 50px;

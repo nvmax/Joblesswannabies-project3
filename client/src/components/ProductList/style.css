@@ -3,13 +3,26 @@
 .product-list-grid {
    display: grid;
    grid-template-rows: repeat(1, 1fr);
-
 }
 
-.product-all-product-grid {
+.product-all-products-grid {
    display: grid;
    gap: 1rem;
    grid-template-columns: repeat(5, 1fr);
+}
+
+/* Product list Grid Media queries */
+
+@media (max-width: 60em) {
+   .product-all-products-grid {
+      grid-template-columns: repeat(3, 1fr);
+   } 
+}
+
+@media (max-width: 50em) {
+   .product-all-products-grid {
+      grid-template-columns: repeat(2, 1fr);
+   } 
 }
 
 /* Product list styling */

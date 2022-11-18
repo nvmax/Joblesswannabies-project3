@@ -48,7 +48,7 @@ const ProductList = () => {
         <div className='product-list-grid product-list-styling'>
             <Categories />
             <div className='product-all-products-title-styling font-Poppins'>All Products</div>
-            <div className='product-all-product-grid'>
+            <div className='product-all-products-grid'>
                 {filterProducts().map((product) => (
                     <ProductItem
                         key={product._id}

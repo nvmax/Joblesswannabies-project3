@@ -45,17 +45,17 @@ function Categories() {
     return (
         <div >
             <div className='product-category-title-styling font-Poppins'>Categories</div>
-            <div className='product-category-grid'>
+            <select>
                 {categories.map((category) => (
-                    <button
+                    <option
                         key={category._id}
                         onClick={() => {
                             handleClick(category._id);
                         }}
                         className='product-category-styling font-Poppins'>{category.name}
-                    </button>
+                    </option>
                 ))}
-            </div>
+            </select>
         </div>
 
     );
