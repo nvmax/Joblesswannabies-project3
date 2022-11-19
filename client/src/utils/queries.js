@@ -16,7 +16,6 @@ export const QUERY_PRODUCTS = gql`
       weight
       waterrating
       colordisplay
-      quantity
       category {
         _id
       }

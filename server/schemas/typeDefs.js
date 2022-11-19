@@ -10,7 +10,7 @@ const typeDefs = gql`
     _id: ID
     name: String
     picture: String
-    discription: String
+    description: String
     msrp: Float
     review: String
     releasedate: String
