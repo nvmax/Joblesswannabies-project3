@@ -24,11 +24,11 @@ function SingleItem() {
   const { products, cart } = state;
 
   useEffect(() => {
-    
+
     if (products.length) {
       setCurrentProduct(products.find((product) => product._id === id));
     }
-    
+
     else if (data) {
       dispatch({
         type: UPDATE_PRODUCTS,
@@ -39,7 +39,7 @@ function SingleItem() {
         idbPromise('products', 'put', product);
       });
     }
-    
+
     else if (!loading) {
       idbPromise('products', 'get').then((indexedProducts) => {
         dispatch({
@@ -83,28 +83,17 @@ function SingleItem() {
   return (
     <>
       {currentProduct && cart ? (
-        <div className="container my-1">
-          <Link to="/browse">← Back to Browsing </Link>
-
-          <h2>{currentProduct.name}</h2>
-
-          <p>{currentProduct.description}</p>
-
-          <p>
-            <strong>Price:</strong>${currentProduct.msrp}{' '}
-            <button onClick={addToCart}>Add to Cart</button>
-            <button
-              disabled={!cart.find((p) => p._id === currentProduct._id)}
-              onClick={removeFromCart}
-            >
-              Remove from Cart
-            </button>
-          </p>
-
-          <img
-            src={currentProduct.picture}
-            alt={currentProduct.name}
-          />
+        <div className="single-item-grid">
+          <div className=''>
+            <img
+              src={currentProduct.picture}
+              alt={currentProduct.name}
+            />
+          </div>
+          <div className='single-item-details-grid'>
+            <h2>{currentProduct.name}</h2>
+            <p>{currentProduct.description}</p>
+          </div>
         </div>
       ) : null}
       {loading ? <div></div> : null}
