@@ -52,6 +52,7 @@ function Categories() {
                 <option className='product-category-styling font-Poppins' value=''>All Products</option>
                 {categories.map((category) => (
                     <option
+                        key={category._id}
                         value={category._id}
                         className='product-category-styling font-Poppins'>{category.name}
                     </option>
