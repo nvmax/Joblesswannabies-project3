@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { useMutation } from '@apollo/client';
 import Auth from '../utils/auth';
 import { ADD_USER } from '../utils/mutations';
+import { Link } from 'react-router-dom';
 
 function SignUp (props) {
     const [formState, setFormState] = useState({ email: '', password: ''});
@@ -72,6 +73,7 @@ function SignUp (props) {
                     <button type='submit'>Submit</button>
                 </div>
             </form>
+            <Link to="/login">Already have an account? Log in</Link>
         </div>
     );
 }
