@@ -69,5 +69,58 @@ body {
 
 .item-image {
    border-radius: 10px;
-   box-shadow: -2px 9px 16px -1px rgba(0,0,0,0.53);
+   box-shadow: inset;
 }
+
+/* login and signup styling */
+.input {
+   width: 100%;
+   padding: 10px 0;
+   margin: 8px 0;
+   outline: none;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   text-align: center;
+   display: grid;
+}
+
+.form-align {
+   text-align: center;
+   margin-top: 3%;
+   font-size: 20px;
+   border-radius: 5px;
+   background-color: rgb(66, 98, 107, 50%);
+   padding: 20px;
+   width: 50%;
+   box-shadow: 4px 4px lightgray;
+   margin-left: auto;
+  margin-right: auto;
+}
+
+.link {
+   text-decoration: none;
+   color: #42626B;
+}
+
+.link:hover {
+   text-decoration: underline;
+}
+
+.button {
+   font-size: 1rem;
+   text-decoration: none;
+   padding: 0.25rem 1rem;
+   border-radius: .5rem;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   margin: 0 1px;
+   background-color:#42626B;
+   color:#EBEBEB;
+   box-shadow: 2px 2px grey;
+ }
+
+ .button:hover {
+   box-shadow: none;
+ }

@@ -31,49 +31,49 @@ function SignUp (props) {
     };
 
     return (
-        <div>
-            <h2>Sign Up</h2>
+        <div className='form-align'>
+            <h2 className='font-Poppins'>Sign Up</h2>
             <form onSubmit={handleFormSubmit}>
-                <div>
-                    <label htmlFor='firstName'>First Name:</label>
-                    <input
+                <div className='font-Poppins-light'>
+                    <label htmlFor='firstName'>First Name</label>
+                    <input className='input'
                     placeholder='firstName'
                     name='firstName'
                     type='firstName'
                     id='firstName'
                     onChange={handleChange}/>
                 </div>
-                <div>
-                    <label htmlFor='lastName'>Last Name:</label>
-                    <input
+                <div className='font-Poppins-light'>
+                    <label htmlFor='lastName'>Last Name</label>
+                    <input className='input'
                     placeholder='lastName'
                     name='lastName'
                     type='lastName'
                     id='lastName'
                     onChange={handleChange}/>
                 </div>
-                <div>
-                    <label htmlFor='email'>Email:</label>
-                    <input 
+                <div className='font-Poppins-light'>
+                    <label htmlFor='email'>Email</label>
+                    <input className='input'
                     placeholder='youremail@email.com'
                     name='email'
                     type='email'
                     id='email'
                     onChange={handleChange}/>
                 </div>
-                <div>
-                    <label htmlFor='password'>Password:</label>
-                    <input placeholder='password'
+                <div className='font-Poppins-light'>
+                    <label htmlFor='password'>Password</label>
+                    <input className='input' placeholder='password'
                     name='password'
                     type='password'
                     id='password'
                     onChange={handleChange}/>
                 </div>
                 <div>
-                    <button type='submit'>Submit</button>
+                    <button className='button' type='submit'>Submit</button>
                 </div>
             </form>
-            <Link to="/login">Already have an account? Log in</Link>
+            <Link className='link font-Poppins-light' to="/login">Already have an account? Log in</Link>
         </div>
     );
 }
