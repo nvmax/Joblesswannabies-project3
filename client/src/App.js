@@ -8,6 +8,7 @@ import Login from './pages/Login'
 import Signup from './pages/Signup'
 import Browse from './pages/Browse';
 import SingleItem from './pages/SingleItem'
+import CartPage from './pages/Cart';
 
 const client = new ApolloClient({
   uri: '/graphql',
@@ -40,6 +41,10 @@ function App() {
             <Route 
               path="/products/:id" 
               element={<SingleItem />} 
+            />
+            <Route 
+              path="/cart" 
+              element={<CartPage />} 
             />
           </Routes>
         </StoreProvider>
