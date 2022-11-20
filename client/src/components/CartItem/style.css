@@ -1,0 +1,11 @@
+.cart-item-div {
+    text-align: center;
+}
+
+.cart-item-image {
+    width: 50%;
+}
+
+.remove-from-cart {
+    background-color: azure;
+}
