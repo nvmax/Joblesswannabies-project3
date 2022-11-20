@@ -47,7 +47,7 @@ const ProductItem = (item) => {
         <h1 className='product-item-title-styling font-Poppins'>{name}</h1>
       </Link>
       <div className="product-item-price-styling">
-        <span className="product-item-cart-price-styling">${msrp}</span>
+        <span className="font-Poppins price-color">${msrp}</span>
       </div>
       <div className="product-item-addCart-div-styling">
         <button className="add-cart-btn font-Poppins" onClick={addToCart}>Add to cart</button>
