@@ -34,7 +34,7 @@ const productSchema = new Schema({
     trim: true,
   },
   releasedate: {
-    type: Date,
+    type: String,
     required: false,
     unique: false,
     trim: true,

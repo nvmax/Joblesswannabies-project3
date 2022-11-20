@@ -2,6 +2,7 @@
 
 body {
    margin: 0%;
+   background-color: #EBEBEB;
 }
 
 /* Fonts */
@@ -15,6 +16,11 @@ body {
    src: url('./fonts/poppins.regular.ttf') format('truetype');
 }
 
+@font-face {
+   font-family: 'Poppins Light';
+   src: url('./fonts/poppins.light.ttf') format('truetype');
+}
+
 .font-Coolvetica {
    font-family: 'Coolvetica';
 }
@@ -23,18 +29,45 @@ body {
    font-family: 'Poppins';
 }
 
+.font-Poppins-light {
+   font-family: 'Poppins Light';
+}
+
 /* Single Item Page Grid */
 
 .single-item-grid {
    display: grid;
-   gap: 1rem;
    grid-template-columns: repeat(2, 1fr);
+   margin-top: 3%;
 }
-
-.single-item-details-grid {
-   display: grid;
-   grid-template-columns: 1;
-}
-
 
 /* Single Item Page Styling */
+
+.text-align-center {
+   text-align: center;
+}
+
+.text-align-right {
+   text-align: right;
+}
+
+.text-size-main-title {
+   font-size: 35px;
+}
+
+.text-size-main {
+   font-size: 20px;
+}
+
+.text-size-specs {
+   
+}
+
+.text-size-title-specs {
+   
+}
+
+.item-image {
+   border-radius: 10px;
+   box-shadow: -2px 9px 16px -1px rgba(0,0,0,0.53);
+}

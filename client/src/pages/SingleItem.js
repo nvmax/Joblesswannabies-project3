@@ -84,15 +84,25 @@ function SingleItem() {
     <>
       {currentProduct && cart ? (
         <div className="single-item-grid">
-          <div className=''>
+          <div className='text-align-right '>
             <img
+            className='item-image'
               src={currentProduct.picture}
               alt={currentProduct.name}
             />
           </div>
-          <div className='single-item-details-grid'>
-            <h2>{currentProduct.name}</h2>
-            <p>{currentProduct.description}</p>
+          <div className=''>
+            <h2 className='text-align-center text-size-main-title font-Poppins'>{currentProduct.name}</h2>
+            <p className='text-align-center text-size-main font-Poppins-light'>{currentProduct.description}</p>
+            <p className='text-align-center text-size-main font-Poppins-light'>${currentProduct.msrp}</p>
+            <h3 className='text-align-center font-Poppins'>Technical Specifications</h3>
+            <p className='text-align-center font-Poppins-light'>Size: {currentProduct.size}</p>
+            <p className='text-align-center font-Poppins-light'>Display Size: {currentProduct.displaysize}</p>
+            <p className='text-align-center font-Poppins-light'>Display Resolution: {currentProduct.displayresolution}</p>
+            <p className='text-align-center font-Poppins-light'>Weight: {currentProduct.weight}</p>
+            <p className='text-align-center font-Poppins-light'>Water Rating: {currentProduct.waterrating}</p>
+            <p className='text-align-center font-Poppins-light'>Color Display: {currentProduct.colordisplay}</p>
+            <p className='text-align-center font-Poppins-light'>Release Date: {currentProduct.releasedate}</p>
           </div>
         </div>
       ) : null}
