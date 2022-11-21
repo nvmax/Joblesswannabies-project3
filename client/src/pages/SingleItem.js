@@ -81,33 +81,43 @@ function SingleItem() {
   };
 
   return (
-    <>
+    <div>
       {currentProduct && cart ? (
         <div className="single-item-grid">
           <div className='text-align-right '>
             <img
-            className='item-image'
+              className='item-image'
               src={currentProduct.picture}
               alt={currentProduct.name}
             />
           </div>
-          <div className=''>
-            <h2 className='text-align-center text-size-main-title font-Poppins'>{currentProduct.name}</h2>
-            <p className='text-align-center text-size-main font-Poppins-light'>{currentProduct.description}</p>
-            <p className='text-align-center text-size-main font-Poppins-light'>${currentProduct.msrp}</p>
-            <h3 className='text-align-center font-Poppins'>Technical Specifications</h3>
-            <p className='text-align-center font-Poppins-light'>Size: {currentProduct.size}</p>
-            <p className='text-align-center font-Poppins-light'>Display Size: {currentProduct.displaysize}</p>
-            <p className='text-align-center font-Poppins-light'>Display Resolution: {currentProduct.displayresolution}</p>
-            <p className='text-align-center font-Poppins-light'>Weight: {currentProduct.weight}</p>
-            <p className='text-align-center font-Poppins-light'>Water Rating: {currentProduct.waterrating}</p>
-            <p className='text-align-center font-Poppins-light'>Color Display: {currentProduct.colordisplay}</p>
-            <p className='text-align-center font-Poppins-light'>Release Date: {currentProduct.releasedate}</p>
+          <div className='text-align-center'>
+            <h2 className='text-size-main-title font-Poppins'>{currentProduct.name}</h2>
+            <p className='text-size-main font-Poppins-light'>{currentProduct.description}</p>
+            <p className='text-size-main font-Poppins-light'>${currentProduct.msrp}</p>
+            <h3 className='font-Poppins'>Technical Specifications</h3>
+            <p className='font-Poppins-light'>Size: {currentProduct.size}</p>
+            <p className='font-Poppins-light'>Display Size: {currentProduct.displaysize}</p>
+            <p className='font-Poppins-light'>Display Resolution: {currentProduct.displayresolution}</p>
+            <p className='font-Poppins-light'>Weight: {currentProduct.weight}</p>
+            <p className='font-Poppins-light'>Water Rating: {currentProduct.waterrating}</p>
+            <p className='font-Poppins-light'>Color Display: {currentProduct.colordisplay}</p>
+            <p className='font-Poppins-light'>Release Date: {currentProduct.releasedate}</p>
+            <button className='btn-single-page-size btn-single-page-style font-Poppins-light' onClick={addToCart}>Add to Cart</button>
+            <button
+             className='font-Poppins-light btn-single-page-style'
+              disabled={!cart.find((p) => p._id === currentProduct._id)}
+              onClick={removeFromCart}
+            >
+              Remove from Cart
+            </button>
           </div>
+
+
         </div>
       ) : null}
       {loading ? <div></div> : null}
-    </>
+    </div>
   );
 }
 

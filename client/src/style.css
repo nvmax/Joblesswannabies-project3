@@ -37,6 +37,7 @@ body {
 
 .single-item-grid {
    display: grid;
+   gap: 1rem;
    grid-template-columns: repeat(2, 1fr);
    margin-top: 3%;
 }
@@ -59,12 +60,33 @@ body {
    font-size: 20px;
 }
 
-.text-size-specs {
-   
+.item-image {
+   border-radius: 10px;
+   box-shadow: -2px 9px 16px -1px rgba(0,0,0,0.53);
 }
 
-.text-size-title-specs {
-   
+.btn-single-page-size {
+  margin-right: 1%; 
+}
+
+
+.btn-single-page-style {
+   background-color: #42626B;
+    color: #EBEBEB;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 10px;
+}
+
+/* Cart Page Styling*/
+
+.cart-page-main-div {
+   margin-top: 3%;
+   margin-bottom: 3%;
+}
+
+.margin-bottom {
+   margin-bottom: 1%;
 }
 
 .item-image {
@@ -124,3 +146,4 @@ body {
  .button:hover {
    box-shadow: none;
  }
+

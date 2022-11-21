@@ -28,6 +28,7 @@ function Nav() {
                 <li><Link className='nav-list-item-styling' to="/browse" >Browse</Link></li>
                 <li><Cart /></li>
             </ul>
+            
         </nav>
         );
     }

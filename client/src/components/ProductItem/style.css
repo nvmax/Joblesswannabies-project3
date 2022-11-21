@@ -8,6 +8,7 @@
    border-radius: 5px;
    background-color: #42626B;
    padding: 10px;
+   box-shadow: -3px 5px 11px 1px rgba(0,0,0,0.53);
 }
 
 .product-item-link-styling {
@@ -16,9 +17,9 @@
 
 .product-item-title-styling {
    margin-top: 1px;
-   font-size: 14px;
+   font-size: 15px;
    text-align: center;
-   color: #EFE7DA;
+   color: #EBEBEB;
 }
 
 .product-image-styling {
@@ -41,6 +42,10 @@
    text-align: center;
    border-radius: 5px;
    margin-top: 2%;
+}
+
+.price-color {
+   color: #EBEBEB;
 }
 
 .add-cart-btn:hover {
