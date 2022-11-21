@@ -34,7 +34,7 @@ const Login = (props) => {
             <h2 className='font-Poppins'>Login</h2>
             <form  onSubmit={handleFormSubmit}>
                 <div className='font-Poppins-light'>
-                    <label htmlFor='email'>Email:</label>
+                    <label htmlFor='email'>Email</label>
                     <input className='input'
                     placeholder='youremail@email.com'
                     name='email'
@@ -43,7 +43,7 @@ const Login = (props) => {
                     onChange={handleChange}/>
                 </div>
                 <div className ='font-Poppins-light'>
-                    <label htmlFor='password'>Password:</label>
+                    <label htmlFor='password'>Password</label>
                     <input className='input' placeholder='password'
                     name='password'
                     type='password'

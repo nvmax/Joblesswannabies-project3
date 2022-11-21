@@ -37,7 +37,7 @@ function SignUp (props) {
                 <div className='font-Poppins-light'>
                     <label htmlFor='firstName'>First Name</label>
                     <input className='input'
-                    placeholder='firstName'
+                    placeholder='First Name'
                     name='firstName'
                     type='firstName'
                     id='firstName'
@@ -46,7 +46,7 @@ function SignUp (props) {
                 <div className='font-Poppins-light'>
                     <label htmlFor='lastName'>Last Name</label>
                     <input className='input'
-                    placeholder='lastName'
+                    placeholder='Last Name'
                     name='lastName'
                     type='lastName'
                     id='lastName'
