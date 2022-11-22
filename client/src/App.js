@@ -10,6 +10,7 @@ import Browse from './pages/Browse';
 import SingleItem from './pages/SingleItem'
 import CartPage from './pages/Cart';
 
+
 const client = new ApolloClient({
   uri: '/graphql',
   cache: new InMemoryCache(),

@@ -42,15 +42,15 @@ const ProductItem = (item) => {
   }
 
   return (
-    <div className='product-item-card-styling'>
+    <div className='product-item-card-styling font-item-list'>
       <Link className="product-item-link-styling" to={`/products/${_id}`}><img className='product-image-styling' src={picture} />
-        <h1 className='product-item-title-styling font-Poppins'>{name}</h1>
+        <h1 className='product-item-title-styling font-item-list'>{name}</h1>
       </Link>
       <div className="product-item-price-styling">
-        <span className="font-Poppins price-color">${msrp}</span>
+        <span className="font-item-list price-color">${msrp}</span>
       </div>
       <div className="product-item-addCart-div-styling">
-        <button className="add-cart-btn font-Poppins" onClick={addToCart}>Add to cart</button>
+        <button className="add-cart-btn font-item-list" onClick={addToCart}>Add to cart</button>
       </div>
     </div>
   )

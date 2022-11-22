@@ -26,7 +26,7 @@ function Nav() {
                 <li><Link className='nav-list-item-styling' to="/signup">Signup</Link></li>
                 <li><Link className='nav-list-item-styling' to="/login">Login</Link></li>
                 <li><Link className='nav-list-item-styling' to="/browse" >Browse</Link></li>
-                <li><Cart /></li>
+                <li><Cart/></li>
             </ul>
             
         </nav>

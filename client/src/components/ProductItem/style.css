@@ -52,4 +52,6 @@
    cursor: pointer;
 }
 
-
+.font-item-list {
+   font-family: 'Poppins Light';
+}
