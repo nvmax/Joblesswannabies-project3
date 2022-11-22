@@ -1,74 +1,72 @@
 /* Nav Grids  */
 
 .nav-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
- }
- 
- .nav-list-grid {
-    display: grid;
-    gap: .75rem;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-start: 3;
- }
- 
- .grid-col-span-2 {
-    grid-column: span 2;
- }
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+}
 
- /* Nav Grid Media queries */
+.nav-list-grid {
+   display: grid;
+   gap: .75rem;
+   grid-template-columns: repeat(4, 1fr);
+   grid-column-start: 3;
+}
+
+.grid-col-span-2 {
+   grid-column: span 2;
+}
+
+/* Nav Grid Media queries */
 
 @media (max-width: 50em) {
-    .nav-grid {
-       grid-template-columns: repeat(1, 1fr);
-       grid-template-rows: repeat(2, 1fr);
-    }
- 
-    .nav-list-grid {
-       grid-template-columns: repeat(4, 1fr);
-       grid-row-start: 2;
-       grid-column-start: 1;
-       gap: 0;
-    }
- }
+   .nav-grid {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+   }
 
- /* Nav Styling */
+   .nav-list-grid {
+      grid-template-columns: repeat(4, 1fr);
+      grid-row-start: 2;
+      grid-column-start: 1;
+      gap: 0;
+   }
+}
+
+/* Nav Styling */
 
 .nav-style {
-    background-color: #42626B;
-    padding: 8px;
- }
- 
- .nav-list-style {
-    list-style: none;
-    font-size: 15px;
-    justify-items: center;
- }
+   background-color: #42626B;
+   padding: 8px;
+   margin-bottom: 1%;
+}
 
- .nav-list-item-styling {
+.nav-list-style {
+   list-style: none;
+   font-size: 15px;
+   justify-items: center;
+}
+
+.nav-list-item-styling {
    text-decoration: none;
    color: #EBEBEB;
- }
- 
- .nav-title {
-    font-size: 50px;
-    color: #EBEBEB;
-    text-decoration: none;
- }
- 
- .nav-icon-style {
-    font-size: 20px;
-    color: #EBEBEB;
- }
- 
- /* Nav Styling Media queries */
- @media (max-width: 50em) {
-    .nav-list-style {
-       padding: 0%;
-    }
- 
-    .nav-title {
-       align-self: center;
-       justify-self: center;
-    }
- }
+}
+
+.nav-title {
+   font-size: 50px;
+   color: #EBEBEB;
+   text-decoration: none;
+}
+
+
+
+/* Nav Styling Media queries */
+@media (max-width: 50em) {
+   .nav-list-style {
+      padding: 0%;
+   }
+
+   .nav-title {
+      align-self: center;
+      justify-self: center;
+   }
+}

@@ -82,11 +82,12 @@ function SingleItem() {
 
   return (
     <div>
+      <Link className='font-Poppins back-to-browsing' to="/browse">← Back to Browsing </Link>
       {currentProduct && cart ? (
         <div className="single-item-grid">
           <div className='text-align-right '>
             <img
-              className='item-image'
+              className='single-item-image'
               src={currentProduct.picture}
               alt={currentProduct.name}
             />

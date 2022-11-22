@@ -6,6 +6,8 @@ import { useQuery } from '@apollo/client';
 import { useStoreContext } from '../../utils/GlobalState';
 import { idbPromise } from '../../utils/helpers';
 import { QUERY_PRODUCTS } from '../../utils/queries';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+import "animate.css/animate.min.css";
 import './style.css'
 
 const ProductList = () => {

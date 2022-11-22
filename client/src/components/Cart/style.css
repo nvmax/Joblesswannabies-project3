@@ -8,3 +8,19 @@
     color: white;
     font-size: 13px;
 }
+
+.nav-icon-style {
+    font-size: 20px;
+    color: #EBEBEB;
+ }
+ 
+ .nav-icon-style:hover {
+    cursor: pointer;
+ }
+
+ @media (max-width: 50rem) {
+    .badge {
+        position: absolute;
+        top: 69px;
+    }
+ }
