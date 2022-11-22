@@ -1,0 +1,27 @@
+/* footer styling */
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer-style {
+    background-color: #42626B;
+    padding: 8px;
+}
+
+.footer-list-style {
+    list-style-type: none;
+    justify-items: center;
+    text-decoration: none;
+    color: #EFE7DA;
+}
+
+.footer-title {
+    font-size: 20px;
+    color: #EFE7DA;
+    text-decoration: none;
+}

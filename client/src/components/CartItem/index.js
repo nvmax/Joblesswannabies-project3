@@ -2,6 +2,8 @@ import React from "react";
 import { useStoreContext } from "../../utils/GlobalState";
 import { REMOVE_FROM_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
 import { idbPromise } from "../../utils/helpers";
+import './style.css'
+import { Link } from 'react-router-dom';
 
 const CartItem = ({ item }) => {
   const [, dispatch] = useStoreContext();
@@ -33,28 +35,32 @@ const CartItem = ({ item }) => {
   };
 
   return (
-    <div className="flex-row">
+    <div className="cart-item-div">
+      <Link to={`/products/${item._id}`}>
+        <img className='cart-item-image'
+          src={item.picture}
+          alt=""
+        />
+      </Link>
       <div>
-        <img src={`/images/${item.image}`} alt="" />
-      </div>
-      <div>
-        <div>
-          {item.name}, ${item.msrp}
-        </div>
-        <div>
-          <span>Qty:</span>
+        <div className='font-Poppins'>{item.name}</div>
+        <div className='font-Poppins'>${item.msrp}</div>
+        <div className='margin-bottom'>
+          <span className='font-Poppins'>Qty: </span>
           <input
+          className='font-Poppins'
             type="number"
             placeholder="1"
             value={item.purchaseQuantity}
             onChange={onChange}
-          />
+          /><br/><br/>
           <span
+            className='font-Poppins remove-from-cart'
             role="img"
             aria-label="trash"
             onClick={() => removeFromCart(item)}
           >
-            🗑️
+            Remove from cart
           </span>
         </div>
       </div>

@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { useMutation } from '@apollo/client';
 import Auth from '../utils/auth';
 import { LOGIN } from '../utils/mutations';
+import { Link } from 'react-router-dom';
 
 const Login = (props) => {
     const [formState, setFormState] = useState({ email: '', password: ''});
@@ -29,27 +30,31 @@ const Login = (props) => {
     };
 
     return (
-        <div>
-            <h2>Login</h2>
-            <form onSubmit={handleFormSubmit}>
-                <div>
-                    <label htmlFor='email'>Email:</label>
-                    <input 
+        <div className='form-align'>
+            <h2 className='font-Poppins'>Login</h2>
+            <form  onSubmit={handleFormSubmit}>
+                <div className='font-Poppins-light'>
+                    <label htmlFor='email'>Email</label>
+                    <input className='input'
                     placeholder='youremail@email.com'
                     name='email'
                     type='email'
                     id='email'
                     onChange={handleChange}/>
                 </div>
-                <div>
-                    <label htmlFor='password'>Password:</label>
-                    <input placeholder='password'
+                <div className ='font-Poppins-light'>
+                    <label htmlFor='password'>Password</label>
+                    <input className='input' placeholder='password'
                     name='password'
                     type='password'
                     id='password'
                     onChange={handleChange}/>
                 </div>
+                <div>
+                    <button className='button' type='submit'>Login</button>
+                </div>
             </form>
+            <Link className='link font-Poppins-light' to="/signup">Don't have an account? Sign up</Link>
         </div>
     );
 }

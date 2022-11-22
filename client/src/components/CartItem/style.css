@@ -1,0 +1,22 @@
+.cart-item-div {
+    text-align: center;
+}
+
+.cart-item-image {
+    border-radius: 10px;
+    box-shadow: -2px 9px 16px -1px rgba(0, 0, 0, 0.53);
+    margin-bottom: 1%;
+    height: 40vh;
+}
+
+.remove-from-cart {
+    background-color: #42626B;
+    color: #EBEBEB;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 10px;
+}
+
+.remove-from-cart:hover {
+    cursor: pointer;
+}

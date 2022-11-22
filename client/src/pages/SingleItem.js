@@ -24,11 +24,11 @@ function SingleItem() {
   const { products, cart } = state;
 
   useEffect(() => {
-    
+
     if (products.length) {
       setCurrentProduct(products.find((product) => product._id === id));
     }
-    
+
     else if (data) {
       dispatch({
         type: UPDATE_PRODUCTS,
@@ -39,7 +39,7 @@ function SingleItem() {
         idbPromise('products', 'put', product);
       });
     }
-    
+
     else if (!loading) {
       idbPromise('products', 'get').then((indexedProducts) => {
         dispatch({
@@ -81,34 +81,43 @@ function SingleItem() {
   };
 
   return (
-    <>
+    <div>
       {currentProduct && cart ? (
-        <div className="container my-1">
-          <Link to="/browse">← Back to Browsing </Link>
-
-          <h2>{currentProduct.name}</h2>
-
-          <p>{currentProduct.description}</p>
-
-          <p>
-            <strong>Price:</strong>${currentProduct.msrp}{' '}
-            <button onClick={addToCart}>Add to Cart</button>
+        <div className="single-item-grid">
+          <div className='text-align-right '>
+            <img
+              className='item-image'
+              src={currentProduct.picture}
+              alt={currentProduct.name}
+            />
+          </div>
+          <div className='text-align-center'>
+            <h2 className='text-size-main-title font-Poppins'>{currentProduct.name}</h2>
+            <p className='text-size-main font-Poppins-light'>{currentProduct.description}</p>
+            <p className='text-size-main font-Poppins-light'>${currentProduct.msrp}</p>
+            <h3 className='font-Poppins'>Technical Specifications</h3>
+            <p className='font-Poppins-light'>Size: {currentProduct.size}</p>
+            <p className='font-Poppins-light'>Display Size: {currentProduct.displaysize}</p>
+            <p className='font-Poppins-light'>Display Resolution: {currentProduct.displayresolution}</p>
+            <p className='font-Poppins-light'>Weight: {currentProduct.weight}</p>
+            <p className='font-Poppins-light'>Water Rating: {currentProduct.waterrating}</p>
+            <p className='font-Poppins-light'>Color Display: {currentProduct.colordisplay}</p>
+            <p className='font-Poppins-light'>Release Date: {currentProduct.releasedate}</p>
+            <button className='btn-single-page-size btn-single-page-style font-Poppins-light' onClick={addToCart}>Add to Cart</button>
             <button
+             className='font-Poppins-light btn-single-page-style'
               disabled={!cart.find((p) => p._id === currentProduct._id)}
               onClick={removeFromCart}
             >
               Remove from Cart
             </button>
-          </p>
+          </div>
 
-          <img
-            src={currentProduct.picture}
-            alt={currentProduct.name}
-          />
+
         </div>
       ) : null}
       {loading ? <div></div> : null}
-    </>
+    </div>
   );
 }
 

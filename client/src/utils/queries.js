@@ -6,7 +6,7 @@ export const QUERY_PRODUCTS = gql`
       _id
       name
       picture
-      discription
+      description
       msrp
       review
       releasedate
@@ -16,7 +16,6 @@ export const QUERY_PRODUCTS = gql`
       weight
       waterrating
       colordisplay
-      quantity
       category {
         _id
       }
