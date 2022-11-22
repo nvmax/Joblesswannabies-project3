@@ -4,11 +4,13 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { StoreProvider } from './utils/GlobalState';
 import Home from './pages/Home';
 import Nav from './components/Nav/index';
-import Login from './pages/Login'
-import Signup from './pages/Signup'
+import Login from './pages/Login';
+import Signup from './pages/Signup';
 import Browse from './pages/Browse';
-import SingleItem from './pages/SingleItem'
+import SingleItem from './pages/SingleItem';
+import Footer from './components/Footer/index';
 import CartPage from './pages/Cart';
+
 
 const client = new ApolloClient({
   uri: '/graphql',
@@ -21,6 +23,7 @@ function App() {
       <Router>
         <StoreProvider>
           <Nav />
+          <Footer />
           <Routes>
             <Route
               path="/"
@@ -50,7 +53,7 @@ function App() {
         </StoreProvider>
       </Router>
     </ApolloProvider>
-  )
+  );
 }
 
 export default App;
