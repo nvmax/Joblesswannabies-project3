@@ -23,7 +23,7 @@ function App() {
       <Router>
         <StoreProvider>
           <Nav />
-          <Footer />
+
           <Routes>
             <Route
               path="/"
@@ -50,8 +50,10 @@ function App() {
               element={<CartPage />} 
             />
           </Routes>
+          <div className='footer-location'><Footer /></div>
         </StoreProvider>
       </Router>
+
     </ApolloProvider>
   );
 }

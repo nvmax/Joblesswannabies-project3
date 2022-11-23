@@ -28,7 +28,7 @@ const Cart = () => {
     return (
       <div>
         <i className="fas fa-shopping-cart nav-icon-style" onClick={navigateToCart}></i>
-        <span class="badge">{state.cart.length}</span>
+        <span className="badge">{state.cart.length}</span>
       </div>
     );
 };
