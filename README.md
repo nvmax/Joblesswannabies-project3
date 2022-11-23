@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+  <h1 align="center" style="font-size:40px">
+  
+  Garmin+</h1>
+  <div align="center">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  </div>
+  
+  
+  <h1 align="center">Badges</h1>
+  <div align="center">
+  <div align="center" style="display:block; width:300px; >
+  
+  [![Node.js](https://img.shields.io/badge/Node.js-green.svg)](https://badges.greenkeeper.io/Node.js)[![jQuery](https://img.shields.io/badge/jQuery-red.svg)](https://badges.greenkeeper.io/jQuery)[![NPM](https://img.shields.io/badge/NPM-green.svg)](https://badges.greenkeeper.io/NPM)[![Express.js](https://img.shields.io/badge/Express.js-blue.svg)](https://badges.greenkeeper.io/Express.js)[![CSS3](https://img.shields.io/badge/CSS3-orange.svg)](https://badges.greenkeeper.io/CSS3)[![HTML5](https://img.shields.io/badge/HTML5-orange.svg)](https://badges.greenkeeper.io/HTML5)[![JavaScript](https://img.shields.io/badge/JavaScript-blue.svg)](https://badges.greenkeeper.io/JavaScript)[![Markdown](https://img.shields.io/badge/Markdown-green.svg)](https://badges.greenkeeper.io/Markdown)[![Handlebars](https://img.shields.io/badge/Handlebars-red.svg)](https://badges.greenkeeper.io/Handlebars)[![React](https://img.shields.io/badge/React-yellow.svg)](https://badges.greenkeeper.io/React)[![GraphQL](https://img.shields.io/badge/GraphQL-green.svg)](https://badges.greenkeeper.io/GraphQL)[![Mongoose](https://img.shields.io/badge/Mongoose-blue.svg)](https://badges.greenkeeper.io/Mongoose)
 
-## Available Scripts
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-In the project directory, you can run:
+  </div>
+  </div>
 
-### `npm start`
+## Table of Contents:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Table of Contents:](#table-of-contents)
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contribute](#contribute)
+- [License](#license)
+- [Tests](#tests)
+- [GitHub](#github)
+- [Questions](#questions)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Screenshot of working page](./public/images/screenshotMain.png)
 
-### `npm test`
+## Description
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Online portal to shop for and buy sensor watches. Browse watches by category, find one that meets your use-case scenario, and once you've made your choice check out your cart using Stripe to pay!
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Navigate to the page address at **\_**.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+For local testing, clone the repo, install node, run npm i, and then launch application using 'node run start. Navigate to localhost:3001 and browse.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
 
-### `npm run eject`
+Browse the watches by category and add the ones you want to purchase to the cart. Once you are ready to checkout your cart, make an account or log in. Use Stripe's simple checkout process to rest at ease knowing your information is secure and then wait for your new watch to arrive!
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contribute
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[Contributor Covenant](https://www.contributor-covenant.org/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+At this time owner is not accepting any contributions to this project.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## License
 
-## Learn More
+Published under the [MIT](license.txt) License.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Read more about the license by clicking this link: [MIT](https://opensource.org/licenses/MIT).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Tests
 
-### Code Splitting
+no tests
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## GitHub
 
-### Analyzing the Bundle Size
+[nvmax](https://github.com/nvmax)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+[Logan2391](https://github.com/Logan2391)
 
-### Making a Progressive Web App
+[makenachr](https://github.com/makenachr)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+[acotterson](https://github.com/acotterson)
 
-### Advanced Configuration
+## Questions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+If you have any questions, please contact us at our github pages.
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![image alt text](./public/images/screenshot2.png)
+![image alt text](./public/images/screenshot3.png)
+![image alt text](./public/images/screenshot4.png)
+![image alt text](./public/images/screenshot5.png)
+![image alt text](./public/images/screenshot6.png)
