@@ -218,3 +218,8 @@ body {
 
 
 
+ .footer-location {
+   position: relative;
+   min-height: 75vh;
+   width: 100%;
+ }

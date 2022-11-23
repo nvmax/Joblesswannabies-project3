@@ -50,6 +50,11 @@ const Login = (props) => {
                     id='password'
                     onChange={handleChange}/>
                 </div>
+                {error ? (
+                    <div>
+                        <p>Incorrect username or password. Please try again.</p>
+                    </div>
+                ) : null}
                 <div>
                     <button className='button' type='submit'>Login</button>
                 </div>

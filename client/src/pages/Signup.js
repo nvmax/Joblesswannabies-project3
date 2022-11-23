@@ -30,10 +30,22 @@ function SignUp (props) {
         });
     };
 
+    // const successMessage = () => {
+    //     return (
+    //         <div className='success'
+    //             style={{ display: submitted ? '' : 'none',}}>
+    //                 <h2>successfully registered!</h2>
+    //             </div>
+    //     );
+    // };
+
     return (
         <div className='form-align'>
             <h2 className='font-Poppins'>Sign Up</h2>
-            <form onSubmit={handleFormSubmit}>
+            <div className='successMessage'>
+                {/* {successMessage()} */}
+            </div>
+            <form onSubmit={handleFormSubmit} action='#'>
                 <div className='font-Poppins-light'>
                     <label htmlFor='firstName'>First Name</label>
                     <input className='input'
@@ -69,9 +81,7 @@ function SignUp (props) {
                     id='password'
                     onChange={handleChange}/>
                 </div>
-                <div>
-                    <button className='button' type='submit'>Submit</button>
-                </div>
+                <button className='button' type='submit' value='Submit'>Submit</button>
             </form>
             <Link className='link font-Poppins-light' to="/login">Already have an account? Log in</Link>
         </div>
