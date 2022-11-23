@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import CartItem from '../components/CartItem/index';
+import CartItem from '../components/CartItem/';
 import { useStoreContext } from '../utils/GlobalState';
 import Auth from '../utils/auth';
 import { useLazyQuery } from '@apollo/client';
