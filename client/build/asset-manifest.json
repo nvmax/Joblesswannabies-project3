@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ea1881c4.css",
+    "main.js": "/static/js/main.86e325e1.js",
+    "static/media/poppins.regular.ttf": "/static/media/poppins.regular.1c701c9a6b587802e3d0.ttf",
+    "static/media/coolvetica.rg-regular.otf": "/static/media/coolvetica.rg-regular.3d81d0e1fdbd5f69b232.otf",
+    "static/media/placeholder-1024x1024.png": "/static/media/placeholder-1024x1024.db442c2b863f4c8b8bda.png",
+    "index.html": "/index.html",
+    "main.ea1881c4.css.map": "/static/css/main.ea1881c4.css.map",
+    "main.86e325e1.js.map": "/static/js/main.86e325e1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ea1881c4.css",
+    "static/js/main.86e325e1.js"
+  ]
+}

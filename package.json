@@ -1,7 +1,7 @@
 {
   "name": "project3",
   "version": "1.0.0",
-  "description": "",
+  "description": "<h1 align=\"center\" style=\"font-size:40px\">",
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
@@ -17,6 +17,15 @@
     "concurrently": "^5.3.0"
   },
   "dependencies": {
-    "dotenv": "^16.0.3"
-  }
+    "dotenv": "^16.0.3",
+    "node": "^16.18.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nvmax/Joblesswannabies-project3.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nvmax/Joblesswannabies-project3/issues"
+  },
+  "homepage": "https://github.com/nvmax/Joblesswannabies-project3#readme"
 }
