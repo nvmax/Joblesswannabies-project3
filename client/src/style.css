@@ -220,6 +220,7 @@ body {
 
  .footer-location {
    position: relative;
-   min-height: 75vh;
+   min-height: 55vh;
    width: 100%;
+   text-decoration: none;
  }
