@@ -5,13 +5,19 @@ footer {
     width: 100%;
 }
 
+:any-link {
+    text-decoration: none!important;
+    color: #EFE7DA;
+}
+
+:any-link:hover {
+    text-decoration: underline!important;
+}
+
 .footer-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
-}
-
-.footer-style {
     background-color: #42626B;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -19,24 +25,14 @@ footer {
 
 .footer-list-style {
     list-style-type: none;
-    color: #EFE7DA;
-}
-
-.footer-list-item-styling {
     list-style: none;
-    color: #EBEBEB;
-  }
+    text-decoration: none;
+    color: #EFE7DA;
+    padding-top: 20px;
+}
 
 .footer-title {
     font-size: 20px;
-    color: #EFE7DA;
-    text-decoration: none;
-}
-
-.footer-column-1-style {
-    text-decoration: none;
-    padding-top: 16px;
-    list-style-type: none;
     color: #EFE7DA;
 }
 

@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom';
 function Footer() {
     return (
         <div>
-            <footer className='footer-grid footer-style font-Poppins'>
-                <div className='footer-column-1-style'>
-                    <li className='footer-list-item-styling'><Link to='/Home'>Home</Link></li>
-                    <li className='footer-list-item-styling'><Link to='/Browse'>Browse</Link></li>
-                    <li className='footer-list-item-styling'><Link to='/Login'>Login</Link></li>
-                    <li className='footer-list-item-styling'><Link to='/Signup'>Signup</Link></li>
+            <footer className='footer-grid font-Poppins'>
+                <div className='footer-list-style'>
+                    <li ><Link to='/Home'>Home</Link></li>
+                    <li ><Link to='/Browse'>Browse</Link></li>
+                    <li ><Link to='/Login'>Login</Link></li>
+                    <li ><Link to='/Signup'>Signup</Link></li>
                 </div>
                 <div className='footer-list-style font-Poppins'>
                     <h2 className='footer-title font-Coolvetica'>Watches Co.</h2>
@@ -21,7 +21,7 @@ function Footer() {
                 <div className='footer-list-style font-Poppins'>
                     <li>Website for educational purposes only.</li>
                     <li>Love the look?</li>
-                    <li href='#https://github.com/nvmax/Joblesswannabies-project3'>Visit github</li>
+                    <li><a href="https://github.com/nvmax/Joblesswannabies-project3">Visit github</a></li>
                 </div>
             </footer>
         </div>
