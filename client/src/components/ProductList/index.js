@@ -58,7 +58,6 @@ const ProductList = () => {
                         picture={product.picture}
                         name={product.name}
                         msrp={product.msrp}
-                        quantity={product.quantity}
                     />
                 ))}
             </div>
