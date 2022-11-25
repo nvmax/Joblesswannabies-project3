@@ -10,6 +10,7 @@ import Browse from './pages/Browse';
 import SingleItem from './pages/SingleItem';
 import Footer from './components/Footer/index';
 import CartPage from './pages/Cart';
+import Success from './pages/Success'
 
 
 const client = new ApolloClient({
@@ -49,6 +50,10 @@ function App() {
               path="/cart" 
               element={<CartPage />} 
             />
+            <Route 
+                path="/success" 
+                element={<Success />} 
+              />
           </Routes>
           <div className='footer-location'><Footer /></div>
         </StoreProvider>

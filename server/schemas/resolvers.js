@@ -60,8 +60,7 @@ const resolvers = {
       for (let i = 0; i < products.length; i++) {
         const product = await stripe.products.create({
           name: products[i].name,
-          description: products[i].description,
-          images: products[i].picture,
+          description: products[i].description
         });
 
         const price = await stripe.prices.create({
@@ -72,6 +71,7 @@ const resolvers = {
 
         line_items.push({
           price: price.id,
+          quantity: 1
         });
       }
 
