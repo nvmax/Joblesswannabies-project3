@@ -7,9 +7,7 @@ import { Link } from 'react-router-dom';
 const Login = (props) => {
     const [formState, setFormState] = useState({ email: '', password: ''});
     const [login, {error}] = useMutation(LOGIN);
-    console.log(formState.email);
-    console.log(formState.password);
-
+    
     const handleFormSubmit = async (event) => {
         event.preventDefault();
         try {
@@ -17,7 +15,6 @@ const Login = (props) => {
                 variables: { email: formState.email, password: formState.password },
                 
             });
-            console.log(mutationResponse, "afterSubmit");
             const token = mutationResponse.data.login.token
             Auth.login(token);
         } catch (e) {

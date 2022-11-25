@@ -1,35 +1,44 @@
 import React, { useEffect } from 'react';
 import { useMutation } from '@apollo/client';
+import Jumbotron from '../components/Jumbotron';
+import { ADD_ORDER } from '../utils/mutations';
+import { idbPromise } from '../utils/helpers';
 
 function Success() {
-    if (Auth.loggedIn()) {
-        return (
-            <nav className='nav-grid nav-style'>
-            <Link to='/' className='gird-col-span-2 nav-title font-Coolvetica'>Garmin</Link>
-            <ul className='nav-list-grid nav-list-style font-Poppins'>
-                <li>
-                    <a href='/' onClick={() => Auth.logout()}>Logout</a>
-                </li>
-                <li><Link className='nav-list-item-styling' to="/browse" >Browse</Link></li>
-                <li><Cart /></li>
-            </ul>
-        </nav>
-        );
-    } else {
-        return (
-            <nav className='nav-grid nav-style'>
-            <Link to='/' className='gird-col-span-2 nav-title font-Coolvetica'>Garmin</Link>
-            <ul className='nav-list-grid nav-list-style font-Poppins'>
-                <li><Link className='nav-list-item-styling' to="/signup">Signup</Link></li>
-                <li><Link className='nav-list-item-styling' to="/login">Login</Link></li>
-                <li><Link className='nav-list-item-styling' to="/browse" >Browse</Link></li>
-                <li><Cart /></li>
-            </ul>
-            
-        </nav>
-        );
+  const [addOrder] = useMutation(ADD_ORDER);
+
+  useEffect(() => {
+    async function saveOrder() {
+      const cart = await idbPromise('cart', 'get');
+      const products = cart.map((item) => item._id);
+
+      if (products.length) {
+        const { data } = await addOrder({ variables: { products } });
+        const productData = data.addOrder.products;
+
+        productData.forEach((item) => {
+          idbPromise('cart', 'delete', item);
+        });
+      }
+
+      setTimeout(() => {
+        window.location.assign('/');
+      }, 3000);
     }
+
+    saveOrder();
+  }, [addOrder]);
+
+  return (
+    <div>
+      <div>
+        <h1>Success!</h1>
+        <h2>Thank you for your purchase!</h2>
+        <h2>You will now be redirected to the home page</h2>
+      </div>
+    </div>
+  );
 }
 
-export default Nav;
+export default Success;
 
