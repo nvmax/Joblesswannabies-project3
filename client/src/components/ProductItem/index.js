@@ -15,7 +15,6 @@ const ProductItem = (item) => {
     name,
     picture,
     msrp,
-    quantity
   } = item;
 
   const { cart } = state
