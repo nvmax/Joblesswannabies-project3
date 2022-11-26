@@ -12,6 +12,7 @@
         "@testing-library/user-event": "^7.2.1",
         "animate.css": "^4.1.1",
         "graphql": "^14.6.0",
+        "jwt-decode": "^2.2.0",
         "react": "^16.13.1",
         "react-animation-on-scroll": "^5.1.0",
         "react-dom": "^16.13.1",
