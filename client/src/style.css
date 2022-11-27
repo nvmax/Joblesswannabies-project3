@@ -216,6 +216,11 @@ body {
    margin-right: 2%;
 }
 
+.home-browse-btn {
+   color: black;
+   font-weight: bold;
+}
+
 @media (max-height: 860px) {
    .homepage-footer-location { 
       height: 22vh; 
