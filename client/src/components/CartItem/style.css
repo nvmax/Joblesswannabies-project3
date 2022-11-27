@@ -6,7 +6,7 @@
     border-radius: 10px;
     box-shadow: -2px 9px 16px -1px rgba(0, 0, 0, 0.53);
     margin-bottom: 1%;
-    height: 40vh;
+    width: 27vw;
 }
 
 .remove-from-cart {
@@ -20,3 +20,4 @@
 .remove-from-cart:hover {
     cursor: pointer;
 }
+

@@ -81,7 +81,7 @@ function SingleItem() {
   };
 
   return (
-    <div>
+    <div className='single-page-main-div'>
       <Link className='font-Poppins back-to-browsing' to="/browse">← Back to Browsing </Link>
       {currentProduct && cart ? (
         <div className="single-item-grid">

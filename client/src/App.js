@@ -8,7 +8,6 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Browse from './pages/Browse';
 import SingleItem from './pages/SingleItem';
-import Footer from './components/Footer/index';
 import CartPage from './pages/Cart';
 import Success from './pages/Success'
 
@@ -23,42 +22,41 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <StoreProvider>
-          <Nav />
-
-          <Routes>
-            <Route
-              path="/"
-              element={<Home />}
-            />
-            <Route 
-              path="/login" 
-              element={<Login />} 
-            />
-            <Route 
-              path="/signup" 
-              element={<Signup />} 
-            />
-            <Route 
-              path="/browse" 
-              element={<Browse />} 
-            />
-            <Route 
-              path="/products/:id" 
-              element={<SingleItem />} 
-            />
-            <Route 
-              path="/cart" 
-              element={<CartPage />} 
-            />
-            <Route 
-                path="/success" 
-                element={<Success />} 
+          <div>
+            <Nav />
+            <Routes>
+              <Route
+                path="/"
+                element={<Home />}
               />
-          </Routes>
-          <div className='footer-location'><Footer /></div>
+              <Route
+                path="/login"
+                element={<Login />}
+              />
+              <Route
+                path="/signup"
+                element={<Signup />}
+              />
+              <Route
+                path="/browse"
+                element={<Browse />}
+              />
+              <Route
+                path="/products/:id"
+                element={<SingleItem />}
+              />
+              <Route
+                path="/cart"
+                element={<CartPage />}
+              />
+              <Route
+                path="/success"
+                element={<Success />}
+              />
+            </Routes>
+          </div>
         </StoreProvider>
       </Router>
-
     </ApolloProvider>
   );
 }
