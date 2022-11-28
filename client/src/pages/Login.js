@@ -37,7 +37,7 @@ const Login = (props) => {
                 <div className='font-Poppins-light'>
                     <label htmlFor='email'>Email</label>
                     <input className='input'
-                    placeholder='youremail@email.com'
+                    placeholder='Youremail@email.com'
                     name='email'
                     type='email'
                     id='email'
@@ -45,7 +45,7 @@ const Login = (props) => {
                 </div>
                 <div className ='font-Poppins-light'>
                     <label htmlFor='password'>Password</label>
-                    <input className='input' placeholder='password'
+                    <input className='input' placeholder='Password'
                     name='password'
                     type='password'
                     id='password'

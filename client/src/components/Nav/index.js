@@ -9,7 +9,7 @@ function Nav() {
         return (
             <nav className='nav-grid nav-style'>
             <Link to='/' className='gird-col-span-2 nav-title font-Coolvetica'>Watches Co.</Link>
-            <ul className='nav-list-grid nav-list-style font-Poppins'>
+            <ul className='nav-list-grid-logged-in nav-list-style font-Poppins'>
                 <li>
                     <a href='/' onClick={() => Auth.logout()}>Logout</a>
                 </li>

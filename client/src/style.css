@@ -5,6 +5,10 @@ body {
    background-color: #EBEBEB;
 }
 
+.content-div {
+   position: relative;
+}
+
 /* Fonts */
 @font-face {
    font-family: 'Coolvetica';
@@ -97,7 +101,7 @@ body {
 @media (max-width: 1306px) {
    .single-item-image {
       height: 40vh;
-   } 
+   }
 
    .single-item-grid {
       grid-template-columns: repeat(1, 1fr);
@@ -182,7 +186,6 @@ body {
 
 .first-section-grid {
    display: grid;
-   gap: 1rem;
    grid-template-columns: repeat(2, 1fr);
    margin-bottom: -.21%;
 }
@@ -193,9 +196,37 @@ body {
 
 /* Home page styling */
 
-.home-page {
-   width: 100%;
+.home-section {
+   max-width: 100%;
 }
+
+.home-img {
+   max-width: 100%;
+}
+
+.homepage-footer-location {
+   position: relative;
+   height: 18vh;
+   width: 100%;
+   text-decoration: none;
+}
+
+.homepage-text-sizing {
+   margin-left: 2%;
+   margin-right: 2%;
+}
+
+.home-browse-btn {
+   color: black;
+   font-weight: bold;
+}
+
+@media (max-height: 860px) {
+   .homepage-footer-location { 
+      height: 22vh; 
+   }
+}
+
 
 /* Home page layout/styling for smaller screens */
 
@@ -205,6 +236,7 @@ body {
 
 .mobile-title-font-size {
    font-size: 24px;
+   margin-top: 1%;
 }
 
 .mobile-text-font-size {
@@ -216,11 +248,8 @@ body {
    grid-template-columns: repeat(1, 1fr);
 }
 
+/* Sucess page*/
 
-
- .footer-location {
-   position: relative;
-   min-height: 55vh;
-   width: 100%;
-   text-decoration: none;
- }
+.success-page {
+   text-align: center;
+}
