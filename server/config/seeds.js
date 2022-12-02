@@ -73,7 +73,7 @@ db.once("open", async () => {
       msrp: "500",
       review:
         "https://www.dcrainmaker.com/2017/03/garmin-forerunner-935-depthreviewhtml",
-      releasedate: "3/29/2017",
+      releasedate: "boo123",
       size: "47 x 47 x 13.9 mm",
       displaysize: "1.2' (30.4 mm) diameter",
       displayresolution: "240 x 240 pixels",
